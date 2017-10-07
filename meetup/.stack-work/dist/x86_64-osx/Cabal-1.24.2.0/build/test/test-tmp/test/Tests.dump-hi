@@ -1,0 +1,1918 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-28 13:04:35.368672 UTC
+
+interface main@main:Main 8002
+  interface hash: 266f3d82c6e54c49ac71a93e29f54bd7
+  ABI hash: f87f8939c43317137cc79376dcf91618
+  export-list hash: 71d9cf2f2a7302290a55c820fbe2c4aa
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6967939d251d61dd83ec5457725bed24
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
+                      QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hspec-2.4.3@hspec-2.4.3-1FDnT5qa4j3Kk2ZAmhP9xh
+                      hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp
+                      hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd
+                      integer-gmp-1.0.0.1
+                      meetup-1.0.0.3@meetup-1.0.0.3-DeZEbl2qIjZjXvuDobyKa
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      quickcheck-io-0.1.4@quickcheck-io-0.1.4-C5t3MfRsr5zrFam5nRAFy
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-BGjMgO8m67W8CHiEl15kZ7
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.1@unix-2.7.2.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         quickcheck-io-0.1.4@quickcheck-io-0.1.4-C5t3MfRsr5zrFam5nRAFy:Test.QuickCheck.IO
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Example
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hspec-2.4.3@hspec-2.4.3-1FDnT5qa4j3Kk2ZAmhP9xh:Test.Hspec 66ca3762ee707172fe9b54dac53f915f
+import  -/  hspec-2.4.3@hspec-2.4.3-1FDnT5qa4j3Kk2ZAmhP9xh:Test.Hspec.Runner 6c8d8324983d9ae3ebe4712e7dbf25cb
+import  -/  hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Options de9a2050b7b76772288a815e3295db25
+import  -/  hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Runner 35cc9972f000a5c28c7f50837f0ac065
+import  -/  hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Spec d10422be46a104b3ddfb25f4ce5fef40
+import  -/  hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Spec.Monad 7f9941d16ba7733af0f31e2ef696f5a8
+import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 29d4e6711b7d6d8a68fed679467f46e6
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  meetup-1.0.0.3@meetup-1.0.0.3-DeZEbl2qIjZjXvuDobyKa:Meetup 87f8dcabcfbf26970f8a941e532bd1f4
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar 62b6efae1e3ea29d64df79905f5411fd
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian 6bfe6a0d86b130087d12d0228a47fb8a
+8e216c2206cb8f7be813d7cecb9e50d3
+  $tc'Case :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2009119047447439236##
+                   4000366137966008070##
+                   Main.$trModule
+                   Main.$tc'Case1) -}
+e1f62309fd3518446321a2aa8fd14d0f
+  $tc'Case1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Case"#) -}
+7a8c19ae5f4b23c19adbbf43e87cde07
+  $tcCase :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9590744086667149182##
+                   6435574634662536949##
+                   Main.$trModule
+                   Main.$tcCase1) -}
+df5f1a54bdbf4a66c08422298b09a82f
+  $tcCase1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Case"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c97abdf345f3980553714ba4344374dd
+  data Case
+    = Case {description :: GHC.Base.String,
+            year :: GHC.Integer.Type.Integer,
+            month :: GHC.Types.Int,
+            week :: Meetup.Schedule,
+            dayofweek :: Meetup.Weekday,
+            dayofmonth :: GHC.Types.Int}
+aa05c4cb22f01138fd2c809bd63f6038
+  dayofmonth :: Main.Case -> GHC.Types.Int
+  RecSel Left Main.Case
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLS),1*U(A,A,A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Case) ->
+                 case ds of wild { Main.Case ds1 ds2 ds3 ds4 ds5 ds6 -> ds6 }) -}
+9b005f3d4f41f441eb7d9083de28c2f4
+  dayofweek :: Main.Case -> Meetup.Weekday
+  RecSel Left Main.Case
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSL),1*U(A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Case) ->
+                 case ds of wild { Main.Case ds1 ds2 ds3 ds4 ds5 ds6 -> ds5 }) -}
+f6708b526acab943cd74e77345b62506
+  description :: Main.Case -> GHC.Base.String
+  RecSel Left Main.Case
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Case) ->
+                 case ds of wild { Main.Case ds1 ds2 ds3 ds4 ds5 ds6 -> ds1 }) -}
+2e149200b0eaa9f583de0853f331d7cd
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+9092468870c0644937b7c2637f7d8ab4
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Hspec.Core.Runner.hspec2
+                        Main.main326
+                        Main.main2
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                            <[Test.Hspec.Core.Tree.SpecTree ()]>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Test.Hspec.Core.Runner.Summary ds ds2 ->
+                 case ds2 of wild1 { GHC.Types.I# x ->
+                 case x of wild2 {
+                   DEFAULT -> System.Exit.die2 @ () ipv
+                   0# -> (# ipv, GHC.Tuple.() #) } } } }) -}
+e815d4d006528050b7374350285e688a
+  main10 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main315 Main.main11) -}
+7bfa61859f5d0b83dcf5772e8a2bee56
+  main100 :: [Main.Case]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Case
+                   Main.main101
+                   (GHC.Types.[] @ Main.Case)) -}
+6d0979d2958a241a051349efd7a4633d
+  main101 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main105
+                   Main.main104
+                   Main.main103
+                   Meetup.First
+                   Meetup.Friday
+                   Main.main102) -}
+13f0ba64c2d4f4a4fec888e1a4f1ee9e
+  main102 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 7#) -}
+bdc74a2512e182fc4294d937658cc325
+  main103 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 12#) -}
+4384efcb13546e4f4df0bd6f3052e522
+  main104 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2012) -}
+f33edc6d5f23514b447309766b997b9b
+  main105 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Friday of December 2012"#) -}
+cce3ed3edb68129499cf587fafce3668
+  main106 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main110
+                   Main.main109
+                   Main.main108
+                   Meetup.Last
+                   Meetup.Sunday
+                   Main.main107) -}
+aa8f3972b35c632f81982f1672d74c40
+  main107 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 22#) -}
+dbf87d9825175b33e6712c457fac6dbc
+  main108 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2#) -}
+ed3871d222a261086d879df63f1cf12f
+  main109 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2015) -}
+1b789a7738c7659af4ac4f4df19b683c
+  main11 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main313 Main.main12) -}
+564e52dc66a4ddb74a91f05dd60e195b
+  main110 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Sunday of February 2015"#) -}
+010d74302755785a71637070ec1d5ca8
+  main111 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main114
+                   Main.main113
+                   Main.main103
+                   Meetup.Last
+                   Meetup.Wednesday
+                   Main.main112) -}
+f8ee3247b997061b47befd9ad998db5d
+  main112 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 31#) -}
+b3a69692c97ff047ccb1003eb159a867
+  main113 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2014) -}
+f5918f62ba10101696ec4a69903157c9
+  main114 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Wednesday of December 2014"#) -}
+0c71291810b5634b724dc3587961466b
+  main115 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main117
+                   Main.main104
+                   Main.main108
+                   Meetup.Last
+                   Meetup.Wednesday
+                   Main.main116) -}
+7ed2a3545b3017c34a6aa5af74f2d17e
+  main116 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 29#) -}
+eda544cda57a89ed38dcb7567b8172d4
+  main117 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Wednesday of February 2012"#) -}
+dd9a001b6da41081a16579a256aef95f
+  main118 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main122
+                   Main.main121
+                   Main.main120
+                   Meetup.Last
+                   Meetup.Sunday
+                   Main.main119) -}
+ce24ebedee4e2a1554900557c4200182
+  main119 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 28#) -}
+c69abd06f569b1c01818291c502091b7
+  main12 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main311 Main.main13) -}
+bd1276008fb0790b907cb670ec4cad1b
+  main120 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4#) -}
+356e1ca0d6bc6a1a5ad9bafeca681ff2
+  main121 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2013) -}
+afbf2cde5971cdfdb2ad0b458f7548e1
+  main122 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Sunday of April 2013"#) -}
+aaf544aa373caec2f501e25cbf15140e
+  main123 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main125
+                   Main.main121
+                   Main.main124
+                   Meetup.Last
+                   Meetup.Sunday
+                   Main.main112) -}
+ad8db4fcd62e773d955c48b4343955a3
+  main124 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+ceda3d3bbb225c3868fc9ae7ccd1ec52
+  main125 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Sunday of March 2013"#) -}
+0bc7f108270e1be48383d6ddc552c79f
+  main126 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main128
+                   Main.main121
+                   Main.main108
+                   Meetup.Last
+                   Meetup.Saturday
+                   Main.main127) -}
+7eee0a1d433191d03a68b87992b2633f
+  main127 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 23#) -}
+6ff7d6d529c63176e9e3038683d49e2e
+  main128 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Saturday of February 2013"#) -}
+53f78f598f0397cee6289b17ee04ce26
+  main129 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main132
+                   Main.main121
+                   Main.main131
+                   Meetup.Last
+                   Meetup.Saturday
+                   Main.main130) -}
+29f628ad3df260e2f05037f8aae4dd76
+  main13 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main309 Main.main14) -}
+8707181a66984b65e3994a992369974d
+  main130 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 26#) -}
+0d7871669cf59d9b2ec2a7199816d965
+  main131 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+73c477f25a31052f85992b3a1a0084ef
+  main132 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Saturday of January 2013"#) -}
+2adc9aac732a3108e5ac241e900b3097
+  main133 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main135
+                   Main.main121
+                   Main.main103
+                   Meetup.Last
+                   Meetup.Friday
+                   Main.main134) -}
+46b070f09a42bd7687e067cf98db4005
+  main134 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 27#) -}
+0c13833aaf743ccf8ec9f3e2eb81a97c
+  main135 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Friday of December 2013"#) -}
+7b3f00c0fa2458a7b0e2048141eb3e52
+  main136 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main138
+                   Main.main121
+                   Main.main137
+                   Meetup.Last
+                   Meetup.Friday
+                   Main.main116) -}
+8fe5727d3d408e2341fa4d26a9544c33
+  main137 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
+6554543343b959fac149f34e28ba419e
+  main138 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Friday of November 2013"#) -}
+5f5a681ce18293cc82fb4d4b7d0c85d1
+  main139 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main141
+                   Main.main121
+                   Main.main140
+                   Meetup.Last
+                   Meetup.Thursday
+                   Main.main112) -}
+c18e735dee9341fca7d27dd5d3e3e24c
+  main14 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main307 Main.main15) -}
+6b6d9d96b6f1b438a00ccd127518f1d6
+  main140 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10#) -}
+943e32a83d30332e04464b7a58d0c8d8
+  main141 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Thursday of October 2013"#) -}
+b21ac25c48fda0cc8e6900028fb096dd
+  main142 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main144
+                   Main.main121
+                   Main.main143
+                   Meetup.Last
+                   Meetup.Thursday
+                   Main.main130) -}
+faa4a348c2ab097a20893327125c42d8
+  main143 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 9#) -}
+4dc750ce7c6c1c6a75deba2642729dbb
+  main144 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Thursday of September 2013"#) -}
+53355c3017514fe55083f0c0f1e9b9c4
+  main145 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main147
+                   Main.main121
+                   Main.main146
+                   Meetup.Last
+                   Meetup.Wednesday
+                   Main.main119) -}
+e2efa2fde87435748843d51af8e30dde
+  main146 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8#) -}
+31449d1caf1c6695327c0c95cce72f14
+  main147 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Wednesday of August 2013"#) -}
+cc3633d7fdacb4f6f85f84dd5ec40d3b
+  main148 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main149
+                   Main.main121
+                   Main.main102
+                   Meetup.Last
+                   Meetup.Wednesday
+                   Main.main112) -}
+5b620ed305fa861d8cb74b46187e79a8
+  main149 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Wednesday of July 2013"#) -}
+db12d6d2f7f569f82a8fe8454cb1fa03
+  main15 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main305 Main.main16) -}
+f7c021f258e859fb3017022207003559
+  main150 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main153
+                   Main.main121
+                   Main.main152
+                   Meetup.Last
+                   Meetup.Tuesday
+                   Main.main151) -}
+ec94911f023abe79f7ef3af7bbfcd7c4
+  main151 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25#) -}
+2ea40c6594ef613c8333a1d96082a8ae
+  main152 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 6#) -}
+efcf9bb1eed61f95f19141e17f665c57
+  main153 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Tuesday of June 2013"#) -}
+719d4c38c793271b03361a082ec32b9c
+  main154 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main156
+                   Main.main121
+                   Main.main155
+                   Meetup.Last
+                   Meetup.Tuesday
+                   Main.main119) -}
+b7fc693998af2f209df002d1727ee595
+  main155 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5#) -}
+8abcaa582943c42ad23376c8e1214f87
+  main156 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Tuesday of May 2013"#) -}
+13ca9e4cd260644ed69daadf6bc0b258
+  main157 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main158
+                   Main.main121
+                   Main.main120
+                   Meetup.Last
+                   Meetup.Monday
+                   Main.main116) -}
+61d9a0f65a24cca42d0f442158dae7a4
+  main158 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Monday of April 2013"#) -}
+9f72cafd13aab2585ba873072ec02dba
+  main159 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main160
+                   Main.main121
+                   Main.main124
+                   Meetup.Last
+                   Meetup.Monday
+                   Main.main151) -}
+758f1cd4ece6bb69e5bd501f61152a17
+  main16 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main303 Main.main17) -}
+9f7c36cf089e73bf6ddcf23f86c59832
+  main160 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "last Monday of March 2013"#) -}
+53b56e092a95ccd40533217b0ccdeb21
+  main161 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main162
+                   Main.main121
+                   Main.main120
+                   Meetup.Fourth
+                   Meetup.Sunday
+                   Main.main119) -}
+8454670700a920d1b417c22c605ec148
+  main162 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Sunday of April 2013"#) -}
+a4446374d79c91b43349e32317766402
+  main163 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main165
+                   Main.main121
+                   Main.main124
+                   Meetup.Fourth
+                   Meetup.Sunday
+                   Main.main164) -}
+c57dea69e0bd392408517aefdaa49473
+  main164 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 24#) -}
+8aef739c7c1dd4a7b61ced196c7233a4
+  main165 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Sunday of March 2013"#) -}
+6ec0ea8e2ec4a23d80b22e607c2ecf9c
+  main166 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main167
+                   Main.main121
+                   Main.main108
+                   Meetup.Fourth
+                   Meetup.Saturday
+                   Main.main127) -}
+1f5de84cc15d2216b280b61780e93249
+  main167 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Saturday of February 2013"#) -}
+c8dbfa855850ac85fc109b0a47689f67
+  main168 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main169
+                   Main.main121
+                   Main.main131
+                   Meetup.Fourth
+                   Meetup.Saturday
+                   Main.main130) -}
+e5cfac4e37899e5fbdb4492a30075601
+  main169 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Saturday of January 2013"#) -}
+16eb9c09e7ab4895bd7fc44df5cdbcb8
+  main17 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main301 Main.main18) -}
+b480df28c18d0c7c4d1b5b5d9562d963
+  main170 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main171
+                   Main.main121
+                   Main.main103
+                   Meetup.Fourth
+                   Meetup.Friday
+                   Main.main134) -}
+b2fd3798f960135784a9bf48cde60cb0
+  main171 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Friday of December 2013"#) -}
+f9774ae4719b1e3dbbf301cfba6a835d
+  main172 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main173
+                   Main.main121
+                   Main.main137
+                   Meetup.Fourth
+                   Meetup.Friday
+                   Main.main107) -}
+51733d6bbfcbaa24123c57cb5cf89045
+  main173 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Friday of November 2013"#) -}
+810ee2b0628e47ecf8825ebdfa8335a4
+  main174 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main175
+                   Main.main121
+                   Main.main140
+                   Meetup.Fourth
+                   Meetup.Thursday
+                   Main.main164) -}
+50d279be7a571de98783a95f7aa05468
+  main175 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Thursday of October 2013"#) -}
+f93db8cf56fc75187f17e3d18ad061d5
+  main176 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main177
+                   Main.main121
+                   Main.main143
+                   Meetup.Fourth
+                   Meetup.Thursday
+                   Main.main130) -}
+34af4f4d509072701b0e81c98ff0ead1
+  main177 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Thursday of September 2013"#) -}
+1ec595be52dd248973d870b0a64472de
+  main178 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main179
+                   Main.main121
+                   Main.main146
+                   Meetup.Fourth
+                   Meetup.Wednesday
+                   Main.main119) -}
+40a19c2337895b43fb601081bb723b42
+  main179 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Wednesday of August 2013"#) -}
+56754c5c2186165ccf06537524679a3c
+  main18 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main299 Main.main19) -}
+70af85356357f3945f243fb63efd43d2
+  main180 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main181
+                   Main.main121
+                   Main.main102
+                   Meetup.Fourth
+                   Meetup.Wednesday
+                   Main.main164) -}
+f6d014266112ced4eed081f455e3e28a
+  main181 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Wednesday of July 2013"#) -}
+91bcb566a01eee10d5a3cb40b1c8d9a1
+  main182 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main183
+                   Main.main121
+                   Main.main152
+                   Meetup.Fourth
+                   Meetup.Tuesday
+                   Main.main151) -}
+6468c0ac3936a7fee23c21442a6f0813
+  main183 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Tuesday of June 2013"#) -}
+a2e826fc83ca1ca67f36e8db938e2de6
+  main184 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main185
+                   Main.main121
+                   Main.main155
+                   Meetup.Fourth
+                   Meetup.Tuesday
+                   Main.main119) -}
+4be2e82a5ddb8a337fabd3d4b0821a69
+  main185 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Tuesday of May 2013"#) -}
+633cf40c1480284a88fa289fe14bf4f4
+  main186 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main187
+                   Main.main121
+                   Main.main120
+                   Meetup.Fourth
+                   Meetup.Monday
+                   Main.main107) -}
+4ecd3be5360747e17fcfca17d6e7dc47
+  main187 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Monday of April 2013"#) -}
+d24909ff0c765d4d64a6f7d19f1e3fe1
+  main188 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main189
+                   Main.main121
+                   Main.main124
+                   Meetup.Fourth
+                   Meetup.Monday
+                   Main.main151) -}
+6012f5541779cd6e032e78d54c8d5eff
+  main189 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "fourth Monday of March 2013"#) -}
+64c380a799064c0ccb0b67b0b3825118
+  main19 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main297 Main.main20) -}
+3071ff0807d3dc8141d63eb4462e52cd
+  main190 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main192
+                   Main.main121
+                   Main.main120
+                   Meetup.Third
+                   Meetup.Sunday
+                   Main.main191) -}
+52ee538b43bfe241b16110f56b25d1a4
+  main191 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 21#) -}
+61a03729814c98ab3f3488621ab6f8c3
+  main192 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Sunday of April 2013"#) -}
+bcec806a24db8a43ba35fadf91ddb5ca
+  main193 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main195
+                   Main.main121
+                   Main.main124
+                   Meetup.Third
+                   Meetup.Sunday
+                   Main.main194) -}
+5b9f4caf430122e5c96e8afde7e47f6f
+  main194 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 17#) -}
+39505c346c5db0bc37237ac3445d3bce
+  main195 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Sunday of March 2013"#) -}
+64aeb770ee465cd14c4d7a203a964f88
+  main196 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main198
+                   Main.main121
+                   Main.main108
+                   Meetup.Third
+                   Meetup.Saturday
+                   Main.main197) -}
+4a0fdb8807a4ecb2f2e1312701bec658
+  main197 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 16#) -}
+35cf7e85bc4c7feef276c9407df19a45
+  main198 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Saturday of February 2013"#) -}
+dd7bb0c3e2925e5dc1d819ffe04a5085
+  main199 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main201
+                   Main.main121
+                   Main.main131
+                   Meetup.Third
+                   Meetup.Saturday
+                   Main.main200) -}
+4839416f69519152b4541864524b8b68
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((),
+           [Test.Hspec.Core.Tree.Tree
+              (Test.Hspec.Core.Example.ActionWith ())
+              (Test.Hspec.Core.Tree.Item ())]) #)
+  {- Arity: 1,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case Main.main325 Main.main6 eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    (GHC.Tuple.(),
+                     GHC.Types.:
+                       @ (Test.Hspec.Core.Tree.Tree
+                            (Test.Hspec.Core.Example.ActionWith ())
+                            (Test.Hspec.Core.Tree.Item ()))
+                       (Test.Hspec.Core.Tree.Node
+                          @ (Test.Hspec.Core.Example.ActionWith ())
+                          @ (Test.Hspec.Core.Tree.Item ())
+                          Main.main3
+                          (case ipv1 of wild { (,) ds2 w1 -> w1 }))
+                       (GHC.Types.[]
+                          @ (Test.Hspec.Core.Tree.Tree
+                               (Test.Hspec.Core.Example.ActionWith ())
+                               (Test.Hspec.Core.Tree.Item ())))) #) }) -}
+0655c648a76627dff2ef839a719e433a
+  main20 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main295 Main.main21) -}
+f698457dd0d202d8b2befa60d9539de8
+  main200 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 19#) -}
+6626a09bac7376660dbe18d1fa8b9da7
+  main201 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Saturday of January 2013"#) -}
+9bc4fd286287805e793885eb02b80ecc
+  main202 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main204
+                   Main.main121
+                   Main.main103
+                   Meetup.Third
+                   Meetup.Friday
+                   Main.main203) -}
+655ed7cd7a46e463faac27bf07fc3558
+  main203 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 20#) -}
+d036525c241a7397e14861521f425a9c
+  main204 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Friday of December 2013"#) -}
+22b78cf36673516671589f7533d959eb
+  main205 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main207
+                   Main.main121
+                   Main.main137
+                   Meetup.Third
+                   Meetup.Friday
+                   Main.main206) -}
+c1c0ff2d43a68d8d449bc4bb0780b250
+  main206 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 15#) -}
+290099769d6b7549732744003e34c7a1
+  main207 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Friday of November 2013"#) -}
+942333bb1e4b5527251a8a7ec9f19ee4
+  main208 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main209
+                   Main.main121
+                   Main.main140
+                   Meetup.Third
+                   Meetup.Thursday
+                   Main.main194) -}
+37314f88c959874fb8c0e763a048b98b
+  main209 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Thursday of October 2013"#) -}
+91a95ad6c09d16d5938abfd6a00cfa4a
+  main21 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main293 Main.main22) -}
+dad9f892d97ebadbca28df7750e9e921
+  main210 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main211
+                   Main.main121
+                   Main.main143
+                   Meetup.Third
+                   Meetup.Thursday
+                   Main.main200) -}
+f52a818bb8795aef61c6ba53829eaf77
+  main211 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Thursday of September 2013"#) -}
+00b07282e7466bcde9387645f9f52962
+  main212 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main213
+                   Main.main121
+                   Main.main146
+                   Meetup.Third
+                   Meetup.Wednesday
+                   Main.main191) -}
+2f2e6c79d53bb39923a7d528f9af3777
+  main213 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Wednesday of August 2013"#) -}
+7201ad997c4ce75e38f1f24098a3b6c4
+  main214 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main215
+                   Main.main121
+                   Main.main102
+                   Meetup.Third
+                   Meetup.Wednesday
+                   Main.main194) -}
+e6496b81519e2c91bcc3abab3c6ee837
+  main215 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Wednesday of July 2013"#) -}
+100b543a85fb7d72ead7ef4142af0407
+  main216 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main218
+                   Main.main121
+                   Main.main152
+                   Meetup.Third
+                   Meetup.Tuesday
+                   Main.main217) -}
+920c799ea63aa4d5e863db11715fd092
+  main217 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 18#) -}
+fddace887a3acb4ae0c2a376b6f49055
+  main218 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Tuesday of June 2013"#) -}
+e62b3fdcb8b4324a162c02f8d505e4b3
+  main219 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main220
+                   Main.main121
+                   Main.main155
+                   Meetup.Third
+                   Meetup.Tuesday
+                   Main.main191) -}
+68a402ddac60152d76a373543ef5a810
+  main22 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main291 Main.main23) -}
+42009a37d2825a85da9cade42ca9b3e3
+  main220 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Tuesday of May 2013"#) -}
+a65f8d16e4d2a2dca734ac363881db81
+  main221 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main222
+                   Main.main121
+                   Main.main120
+                   Meetup.Third
+                   Meetup.Monday
+                   Main.main206) -}
+fe9c5bc20a65f7ecfe8c11b5fbc12751
+  main222 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Monday of April 2013"#) -}
+bec7bddf0bed33a359145c70156b20bb
+  main223 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main224
+                   Main.main121
+                   Main.main124
+                   Meetup.Third
+                   Meetup.Monday
+                   Main.main217) -}
+9d278318b3d9647fb017f8ec59d41207
+  main224 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "third Monday of March 2013"#) -}
+86622ea67c72eab0ad45df2d7a4e8351
+  main225 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main227
+                   Main.main121
+                   Main.main120
+                   Meetup.Second
+                   Meetup.Sunday
+                   Main.main226) -}
+498fdcca237fb7335a56faced6f46e0b
+  main226 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 14#) -}
+cf587e9c58a316ca5b9a8c4aa9c6a3ab
+  main227 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Sunday of April 2013"#) -}
+eb2f0d4bb65947a3b5fc765539213bbf
+  main228 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main229
+                   Main.main121
+                   Main.main124
+                   Meetup.Second
+                   Meetup.Sunday
+                   Main.main140) -}
+5017135f7d51850c4b5d4a0564cd8f04
+  main229 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Sunday of March 2013"#) -}
+064f57f9c3b9937e4d459080cdca7760
+  main23 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main289 Main.main24) -}
+fdc5cb7937cc28187534065e16a591a9
+  main230 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main231
+                   Main.main121
+                   Main.main108
+                   Meetup.Second
+                   Meetup.Saturday
+                   Main.main143) -}
+86c6f09ae5962910a1236bd9e1d87d6e
+  main231 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Saturday of February 2013"#) -}
+5bafb895f78ab958ab82e116bf3c3978
+  main232 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main233
+                   Main.main121
+                   Main.main131
+                   Meetup.Second
+                   Meetup.Saturday
+                   Main.main103) -}
+38b4cb431bbc3bd98776036b936da84f
+  main233 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Saturday of January 2013"#) -}
+f00a472995b3ce270787a04d7d01d15b
+  main234 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main236
+                   Main.main121
+                   Main.main103
+                   Meetup.Second
+                   Meetup.Friday
+                   Main.main235) -}
+ee296cfdc44d1d8935d95f5514097f1a
+  main235 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 13#) -}
+97283382d6f67cb425308e324e094fc0
+  main236 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Friday of December 2013"#) -}
+e196f185d3b8e91001b7cf2bb5119a75
+  main237 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main238
+                   Main.main121
+                   Main.main137
+                   Meetup.Second
+                   Meetup.Friday
+                   Main.main146) -}
+ea8339c86935287c8cce9ade8d667310
+  main238 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Friday of November 2013"#) -}
+35fb13cf5abd4d845c6ed132251ce32d
+  main239 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main240
+                   Main.main121
+                   Main.main140
+                   Meetup.Second
+                   Meetup.Thursday
+                   Main.main140) -}
+30b6ad16e9a52df9af0423b68534bea5
+  main24 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main287 Main.main25) -}
+dc7dacfdedaccf85b7fdd6b78525b5ac
+  main240 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Thursday of October 2013"#) -}
+2ceaf37453246657b7a94c2d1be7632d
+  main241 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main242
+                   Main.main121
+                   Main.main143
+                   Meetup.Second
+                   Meetup.Thursday
+                   Main.main103) -}
+18d21ffc7cb8dbcca3276da0fc46e905
+  main242 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Thursday of September 2013"#) -}
+0822d8d9c66180c7042c2aa3c792f023
+  main243 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main244
+                   Main.main121
+                   Main.main146
+                   Meetup.Second
+                   Meetup.Wednesday
+                   Main.main226) -}
+4f4b462b97bd80e7c57993f7ddf6a183
+  main244 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Wednesday of August 2013"#) -}
+167322c41359771964962352f1ebba51
+  main245 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main246
+                   Main.main121
+                   Main.main102
+                   Meetup.Second
+                   Meetup.Wednesday
+                   Main.main140) -}
+e6dad16550138431dc391ec92b974f89
+  main246 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Wednesday of July 2013"#) -}
+30b5c9524f9fcb1c451d786050d098e8
+  main247 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main248
+                   Main.main121
+                   Main.main152
+                   Meetup.Second
+                   Meetup.Tuesday
+                   Main.main137) -}
+beed3c7f793993b08b5e1b53aba6cb24
+  main248 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Tuesday of June 2013"#) -}
+413dff04d595ffaa79dbab3ece97e9cc
+  main249 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main250
+                   Main.main121
+                   Main.main155
+                   Meetup.Second
+                   Meetup.Tuesday
+                   Main.main226) -}
+3ae0a0db7d57860bb7190f9ed8190963
+  main25 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main285 Main.main26) -}
+1cf0f24d12196e8d5ccb677482c6618e
+  main250 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Tuesday of May 2013"#) -}
+d428c5cc4d949a61c5ef203629e47e8c
+  main251 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main252
+                   Main.main121
+                   Main.main120
+                   Meetup.Second
+                   Meetup.Monday
+                   Main.main146) -}
+2caf5d27bc0e2dad0ee5d30d285cc4df
+  main252 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Monday of April 2013"#) -}
+e01ef82d4266c9d0a7da6cf3152b8104
+  main253 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main254
+                   Main.main121
+                   Main.main124
+                   Meetup.Second
+                   Meetup.Monday
+                   Main.main137) -}
+558b7b9d786c3b9903c7718646448e48
+  main254 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "second Monday of March 2013"#) -}
+0deb8820f0a24c49fd081b968774f1fb
+  main255 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main256
+                   Main.main121
+                   Main.main120
+                   Meetup.First
+                   Meetup.Sunday
+                   Main.main102) -}
+65015eede3a1ff7b975e5fb6c3e4482b
+  main256 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Sunday of April 2013"#) -}
+4a136050bc2a429990a3f4d317a5050a
+  main257 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main258
+                   Main.main121
+                   Main.main124
+                   Meetup.First
+                   Meetup.Sunday
+                   Main.main124) -}
+b7308fc27013fc7542c019f5484ad3cf
+  main258 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Sunday of March 2013"#) -}
+218df473198de18cada61b111bcfb734
+  main259 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main260
+                   Main.main121
+                   Main.main108
+                   Meetup.First
+                   Meetup.Saturday
+                   Main.main108) -}
+b15b178ad1622cfc73b3e62ec67cd221
+  main26 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main283 Main.main27) -}
+112fddb5794192fbf377329e46be6484
+  main260 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Saturday of February 2013"#) -}
+c7439fbe0adaaa1118a97511a982c631
+  main261 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main262
+                   Main.main121
+                   Main.main131
+                   Meetup.First
+                   Meetup.Saturday
+                   Main.main155) -}
+d6db4fb06a4c004687cded905882fa21
+  main262 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Saturday of January 2013"#) -}
+d2023451f7521485ddadeadadd29295b
+  main263 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main264
+                   Main.main121
+                   Main.main103
+                   Meetup.First
+                   Meetup.Friday
+                   Main.main152) -}
+8acf3d948031491fdfbf0b994fd4d57b
+  main264 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Friday of December 2013"#) -}
+610f3c42313e845a2fea1bdcfb116cf2
+  main265 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main266
+                   Main.main121
+                   Main.main137
+                   Meetup.First
+                   Meetup.Friday
+                   Main.main131) -}
+006d0702eb7108e02230097abc371c39
+  main266 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Friday of November 2013"#) -}
+33a3f72c3e9cba56067060bc3ceb75ef
+  main267 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main268
+                   Main.main121
+                   Main.main140
+                   Meetup.First
+                   Meetup.Thursday
+                   Main.main124) -}
+433c55a381a2e6ab70594b20a1edefe9
+  main268 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Thursday of October 2013"#) -}
+ec2685a0b5b7780e9d9b3e916c5f6287
+  main269 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main270
+                   Main.main121
+                   Main.main143
+                   Meetup.First
+                   Meetup.Thursday
+                   Main.main155) -}
+d5f2fe0a1136983ed9c52a7b32a17341
+  main27 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main281 Main.main28) -}
+4dd90d61d0eb19a882fc745b9a8da590
+  main270 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Thursday of September 2013"#) -}
+1376dff0ef2f54d65426bfd1f4632b05
+  main271 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main272
+                   Main.main121
+                   Main.main146
+                   Meetup.First
+                   Meetup.Wednesday
+                   Main.main102) -}
+c42c78e1415be58c0fd2b9ca8fa2dd60
+  main272 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Wednesday of August 2013"#) -}
+fb80324c10c2ad1003c05a798682d480
+  main273 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main274
+                   Main.main121
+                   Main.main102
+                   Meetup.First
+                   Meetup.Wednesday
+                   Main.main124) -}
+4483a4242c7508b1d2796d3971b402d2
+  main274 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Wednesday of July 2013"#) -}
+6d0a47f0667177167a7f70df064a89ac
+  main275 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main276
+                   Main.main121
+                   Main.main152
+                   Meetup.First
+                   Meetup.Tuesday
+                   Main.main120) -}
+fa8e1f1d7f3557b5ce2b9fc92308805c
+  main276 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Tuesday of June 2013"#) -}
+ac2615282c5568be64923eee508d56a6
+  main277 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main278
+                   Main.main121
+                   Main.main155
+                   Meetup.First
+                   Meetup.Tuesday
+                   Main.main102) -}
+f90e30bb0a434daac4836b281fe000f4
+  main278 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Tuesday of May 2013"#) -}
+e59a962038b8fa62b7d8b41716196951
+  main279 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main280
+                   Main.main121
+                   Main.main120
+                   Meetup.First
+                   Meetup.Monday
+                   Main.main131) -}
+44cfd911b53423a7877d58d2e0bd7ccb
+  main28 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main279 Main.main29) -}
+ce6a2c68aca74f4be35db4bb17af421f
+  main280 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Monday of April 2013"#) -}
+124e8c245c606970bdd696e98ebad0e3
+  main281 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main282
+                   Main.main121
+                   Main.main124
+                   Meetup.First
+                   Meetup.Monday
+                   Main.main120) -}
+0f90cb621b9c19332eed3774871c173f
+  main282 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "first Monday of March 2013"#) -}
+9e6738b02114aff8951f08dc5bc01ac3
+  main283 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main284
+                   Main.main121
+                   Main.main140
+                   Meetup.Teenth
+                   Meetup.Sunday
+                   Main.main235) -}
+1ee01bf2af408edb38a3c035ee30f7ee
+  main284 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "sunteenth of October 2013"#) -}
+ec50b043951cc503cdc525a3dc79fdfd
+  main285 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main286
+                   Main.main121
+                   Main.main152
+                   Meetup.Teenth
+                   Meetup.Sunday
+                   Main.main197) -}
+a20885be533b0dbe35386ade6cfd87e8
+  main286 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "sunteenth of June 2013"#) -}
+1bfd8522449d7fd87cfb168dc1c19c0a
+  main287 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main288
+                   Main.main121
+                   Main.main155
+                   Meetup.Teenth
+                   Meetup.Sunday
+                   Main.main200) -}
+251b2deb428ae422cea655892ee4dd68
+  main288 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "sunteenth of May 2013"#) -}
+d1d80d9bc496a05c337a2460ecd2d71c
+  main289 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main290
+                   Main.main121
+                   Main.main140
+                   Meetup.Teenth
+                   Meetup.Saturday
+                   Main.main200) -}
+32c96f067bd081f2a8b5a61c00b45119
+  main29 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main277 Main.main30) -}
+d5c7431bdbc5c3e9fc624df8ca911047
+  main290 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "saturteenth of October 2013"#) -}
+95ae383466ad21149a1d0559fcbc79db
+  main291 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main292
+                   Main.main121
+                   Main.main120
+                   Meetup.Teenth
+                   Meetup.Saturday
+                   Main.main235) -}
+7ce9c810bdba7d08c60ce793ab5b35e2
+  main292 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "saturteenth of April 2013"#) -}
+9a440f1fca0095071d6ba5d2bbe442e7
+  main293 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main294
+                   Main.main121
+                   Main.main108
+                   Meetup.Teenth
+                   Meetup.Saturday
+                   Main.main197) -}
+60d18c6995273763399957536336577c
+  main294 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "saturteenth of February 2013"#) -}
+16a0a91b46f54badd498022ef152b338
+  main295 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main296
+                   Main.main121
+                   Main.main143
+                   Meetup.Teenth
+                   Meetup.Friday
+                   Main.main235) -}
+c9e57d68a4c2fc0d8c44c07e30874621
+  main296 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "friteenth of September 2013"#) -}
+9165c8e1baac34f7f9e616137fb48933
+  main297 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main298
+                   Main.main121
+                   Main.main146
+                   Meetup.Teenth
+                   Meetup.Friday
+                   Main.main197) -}
+8750f59142dd955cb721d1cd1c671e29
+  main298 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "friteenth of August 2013"#) -}
+a0f9b5d6092d9c7d5fe82fe59dc2eb8b
+  main299 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main300
+                   Main.main121
+                   Main.main120
+                   Meetup.Teenth
+                   Meetup.Friday
+                   Main.main200) -}
+7eb83168cd4bb71834e0091ddb63a490
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.main5
+                   Main.main4) -}
+25eca0300cfe1c2e20e213276ea56463
+  main30 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main275 Main.main31) -}
+5deac3da1b2c36b40f7c7ce8652865e8
+  main300 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "friteenth of April 2013"#) -}
+84dc3cf7e44906422fd9468f4f2a50b6
+  main301 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main302
+                   Main.main121
+                   Main.main143
+                   Meetup.Teenth
+                   Meetup.Thursday
+                   Main.main200) -}
+7a78c56ad81088ed8864ef33559f4fc5
+  main302 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "thursteenth of September 2013"#) -}
+7fefc521fa4abaa5941e6ea57cbad026
+  main303 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main304
+                   Main.main121
+                   Main.main152
+                   Meetup.Teenth
+                   Meetup.Thursday
+                   Main.main235) -}
+dcb0c1245c5c2bdb501bdaa68a7ee15a
+  main304 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "thursteenth of June 2013"#) -}
+280d8d1bf7edc3ef419650c394d57808
+  main305 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main306
+                   Main.main121
+                   Main.main155
+                   Meetup.Teenth
+                   Meetup.Thursday
+                   Main.main197) -}
+6036c17204faff94cca14f06bf1eb402
+  main306 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "thursteenth of May 2013"#) -}
+a475994e327fda1e39a4b79cc132a9a2
+  main307 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main308
+                   Main.main121
+                   Main.main152
+                   Meetup.Teenth
+                   Meetup.Wednesday
+                   Main.main200) -}
+736b2a91ff9602319c0a498755ba29ba
+  main308 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "wednesteenth of June 2013"#) -}
+28af499e4af34dd6c87595b70d0aa3de
+  main309 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main310
+                   Main.main121
+                   Main.main108
+                   Meetup.Teenth
+                   Meetup.Wednesday
+                   Main.main235) -}
+1469e74c15bf96bb3cb41b78555d4e81
+  main31 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main273 Main.main32) -}
+07610259c9ca49d12ca02e094ae9ec5f
+  main310 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "wednesteenth of February 2013"#) -}
+1e44813c084b0baa28f4cd43842a4dce
+  main311 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main312
+                   Main.main121
+                   Main.main131
+                   Meetup.Teenth
+                   Meetup.Wednesday
+                   Main.main197) -}
+d5518438afed50e9e248d31cf2615020
+  main312 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "wednesteenth of January 2013"#) -}
+97891381dcf18bd7fc89a797f8b2a4ab
+  main313 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main314
+                   Main.main121
+                   Main.main146
+                   Meetup.Teenth
+                   Meetup.Tuesday
+                   Main.main235) -}
+fd22fea715737aa11309a30cb968c5a9
+  main314 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "tuesteenth of August 2013"#) -}
+708061719562d9606a0469786923beee
+  main315 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main316
+                   Main.main121
+                   Main.main120
+                   Meetup.Teenth
+                   Meetup.Tuesday
+                   Main.main197) -}
+acf971f9a0c4e40f031d02668d164bc1
+  main316 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "tuesteenth of April 2013"#) -}
+79c413f2c5fc2809c102ecf70eff45dc
+  main317 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main318
+                   Main.main121
+                   Main.main124
+                   Meetup.Teenth
+                   Meetup.Tuesday
+                   Main.main200) -}
+77b1ebc32dd4f7648319b2d99050c219
+  main318 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "tuesteenth of March 2013"#) -}
+78bdd70cf490a17b84091bb65dcde023
+  main319 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main320
+                   Main.main121
+                   Main.main143
+                   Meetup.Teenth
+                   Meetup.Monday
+                   Main.main197) -}
+a51b52f43dcd152cef016f414e34a15b
+  main32 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main271 Main.main33) -}
+5222f7a11bd8326667a2a7ec8a7d26dc
+  main320 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "monteenth of September 2013"#) -}
+4b283034562968c2228ba1a3ff53a2ba
+  main321 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main322
+                   Main.main121
+                   Main.main146
+                   Meetup.Teenth
+                   Meetup.Monday
+                   Main.main200) -}
+464ed64e22a76ceec4925fdd2ede2a17
+  main322 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "monteenth of August 2013"#) -}
+fd22e73beda00e1af8b20c9e436a71f8
+  main323 :: Main.Case
+  {- Unfolding: (Main.Case
+                   Main.main324
+                   Main.main121
+                   Main.main155
+                   Meetup.Teenth
+                   Meetup.Monday
+                   Main.main235) -}
+005cfa4bb05ae173cb04066b70feb2e3
+  main324 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "monteenth of May 2013"#) -}
+d486aade4d0df033eb9f79dd45f04779
+  main325 ::
+    [Main.Case]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+204f3c2a967e9378f0b7349fb46554bf
+  main326 :: Test.Hspec.Core.Options.Config
+  {- Unfolding: (Test.Hspec.Core.Options.Config
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.True
+                   (GHC.Base.Nothing @ GHC.IO.FilePath)
+                   GHC.Types.False
+                   GHC.Types.False
+                   (GHC.Base.Nothing @ (Test.Hspec.Core.Util.Path -> GHC.Types.Bool))
+                   (GHC.Base.Nothing @ (Test.Hspec.Core.Util.Path -> GHC.Types.Bool))
+                   (GHC.Base.Nothing @ GHC.Integer.Type.Integer)
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   Test.Hspec.Core.Example.defaultParams1
+                   Test.Hspec.Core.Options.ColorAuto
+                   GHC.Types.True
+                   (GHC.Base.Nothing @ Test.Hspec.Core.Formatters.Monad.Formatter)
+                   GHC.Types.False
+                   Test.Hspec.Core.Options.defaultConfig1
+                   (GHC.Base.Nothing @ GHC.Types.Int)) -}
+da028ecce0c60170d1b0650af77ccbe7
+  main327 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+2df0bec8a3c2e7c9210ca6248b15a3a7
+  main33 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main269 Main.main34) -}
+79486fca7cae6e098d0596f1acab2a57
+  main34 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main267 Main.main35) -}
+c470b8025c838111a2a2fd7970742442
+  main35 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main265 Main.main36) -}
+857f31b7f1d0d74f5ab0384771144e80
+  main36 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main263 Main.main37) -}
+a2a4f5d1b4292f264587eaae1911df85
+  main37 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main261 Main.main38) -}
+6a4af9c58e4e95744abdd2c003fe1096
+  main38 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main259 Main.main39) -}
+795ba8230647565d9953cb91e9a5fdf5
+  main39 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main257 Main.main40) -}
+5c6f7cc7a5b82a42be5af07884f9bbff
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "eetupDay"#) -}
+a27173b67d13156a9882e337a5732e3d
+  main40 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main255 Main.main41) -}
+7fadfeccbf9fa2c3fdfb485b378b38af
+  main41 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main253 Main.main42) -}
+02e952bcc955a230df17aa6c9632def9
+  main42 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main251 Main.main43) -}
+21deba1a68dde369a1a738b49be45a19
+  main43 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main249 Main.main44) -}
+764d9465f750a1211a760fbe440f9eed
+  main44 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main247 Main.main45) -}
+df5898b259cbff1b92752de3ceae81f9
+  main45 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main245 Main.main46) -}
+41f6897ea7e157cff1238a81e9c0b75d
+  main46 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main243 Main.main47) -}
+73a012dd88301dc5ccc3ac52a9c6d494
+  main47 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main241 Main.main48) -}
+f7d515cca5fe2343a9ccbd5f0a0d4a3e
+  main48 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main239 Main.main49) -}
+955c1a42080fad16afd8bb5561cb94b8
+  main49 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main237 Main.main50) -}
+8234c313f09533662382c08f512d5da4
+  main5 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'm'#) -}
+78c6f34590b146969624d07c35cfe9f4
+  main50 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main234 Main.main51) -}
+d097239f4cd751f3387bdbdadcec288a
+  main51 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main232 Main.main52) -}
+6e52b87284bad710a9b50ac5f40b4957
+  main52 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main230 Main.main53) -}
+e9aeaa43720199e8c2b03ce73359fcac
+  main53 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main228 Main.main54) -}
+9b5b61b1136f3a6dffbe437dcc487be4
+  main54 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main225 Main.main55) -}
+00b2d64b2601889f47e8802ee77b26a1
+  main55 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main223 Main.main56) -}
+73a2f48c731e184343a3b6b58f1c7e47
+  main56 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main221 Main.main57) -}
+a398f1c5c96ed90f9868cd96090e404e
+  main57 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main219 Main.main58) -}
+f035fc1b6c3d891a75ca1100aa1ad58d
+  main58 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main216 Main.main59) -}
+845f0a4bb4765d4fe96498d886fc5a3e
+  main59 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main214 Main.main60) -}
+e9cffc5dd499b04e7c99da10d6277d16
+  main6 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main323 Main.main7) -}
+bf3ebd8eb9333cc8d06e2f15b7040965
+  main60 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main212 Main.main61) -}
+0a2690323a945268e58bb7fad39212c0
+  main61 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main210 Main.main62) -}
+cd5d0460a045cbb99bb5f0b27ead5608
+  main62 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main208 Main.main63) -}
+082378b94de66d650ef94c4156342b85
+  main63 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main205 Main.main64) -}
+27d6f7ecf94a1d49ec8294100793e563
+  main64 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main202 Main.main65) -}
+214755e8ab92cd93affdabec1929585f
+  main65 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main199 Main.main66) -}
+a759d6da1f8a7da7b2ffc3b2408f87d4
+  main66 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main196 Main.main67) -}
+ae378367687c7f3a85dca7cde0334ba6
+  main67 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main193 Main.main68) -}
+5f8d6ba9e3cec9be246cef483cf60c85
+  main68 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main190 Main.main69) -}
+813433bb572f43231eacecf91aeba0ef
+  main69 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main188 Main.main70) -}
+d12813e9dd760a9969d640d1a486648e
+  main7 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main321 Main.main8) -}
+4eb2f638faeb0af18d127a94a19e7aa6
+  main70 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main186 Main.main71) -}
+dfb0810d95a8054d7f379141da04f7ea
+  main71 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main184 Main.main72) -}
+1e29fcfdfbab863536a46606b8ff3a75
+  main72 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main182 Main.main73) -}
+76cdce056ada80d3b84529b0287d897c
+  main73 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main180 Main.main74) -}
+5326919b9c56d2f8ab77234c0e88350d
+  main74 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main178 Main.main75) -}
+774ae7e0b3152adb5b54c0711f1435a1
+  main75 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main176 Main.main76) -}
+c27b140069f7122b31a41e710cf09d30
+  main76 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main174 Main.main77) -}
+8c7988a1ee1638bc525eee660bbcc148
+  main77 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main172 Main.main78) -}
+426d2daacb582817f01604af003445b0
+  main78 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main170 Main.main79) -}
+4a40d5b83b1c8304f7097d3378eee60e
+  main79 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main168 Main.main80) -}
+f3b673a5296035038d1128dee36b84b3
+  main8 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main319 Main.main9) -}
+1aa275b63535d69860d27ff5645d35c0
+  main80 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main166 Main.main81) -}
+e0dfb7175de937d5b319a491a15f5690
+  main81 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main163 Main.main82) -}
+d713e29d4c2164b00996d1af7092b7d2
+  main82 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main161 Main.main83) -}
+0387b2aba184188bf90e6450fbdc39b9
+  main83 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main159 Main.main84) -}
+f4eed57244f2cef25a87ee5beb8e74a8
+  main84 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main157 Main.main85) -}
+5bd394bdf4afd87cc8d884c91e4bdaca
+  main85 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main154 Main.main86) -}
+f65b4904b68ccb13a576e7c275ca0487
+  main86 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main150 Main.main87) -}
+ec370e33cdb6af4e65786ace15c1bf52
+  main87 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main148 Main.main88) -}
+fe39f4c70f839c2f7dbf077a6ec9be6f
+  main88 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main145 Main.main89) -}
+bdca4813efdb239b929927aee24c757a
+  main89 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main142 Main.main90) -}
+1b05a6b8415688dbb5d7e8157af21c58
+  main9 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main317 Main.main10) -}
+0bc703df71e8ec53dd59b25ddd1e4870
+  main90 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main139 Main.main91) -}
+e1773c3db53aceb4f809424dad149615
+  main91 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main136 Main.main92) -}
+60e7d7248583b7afd45c3e8681004ca3
+  main92 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main133 Main.main93) -}
+4fbabcd2a134959fcdeee913639b0740
+  main93 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main129 Main.main94) -}
+3d7117348f482f6cef1d9b6361ee79ca
+  main94 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main126 Main.main95) -}
+a8c81838c2e42487c59ccf1019424b8c
+  main95 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main123 Main.main96) -}
+df956fa7a1335663c5c309290d1ca073
+  main96 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main118 Main.main97) -}
+fb05db6af4035b27d0dc64c8000d65c0
+  main97 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main115 Main.main98) -}
+e213092b0e2a9af97c524fff530089f5
+  main98 :: [Main.Case]
+  {- Unfolding: (GHC.Types.: @ Main.Case Main.main111 Main.main99) -}
+0d95c675d65f6c4e7f4e9f249507ad4e
+  main99 :: [Main.Case]
+  {- Unfolding: (GHC.Types.:
+                   @ Main.Case
+                   Main.main106
+                   Main.main100) -}
+890053a4f34c7494679dad2bd269eb9c
+  month :: Main.Case -> GHC.Types.Int
+  RecSel Left Main.Case
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLL),1*U(A,A,1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Case) ->
+                 case ds of wild { Main.Case ds1 ds2 ds3 ds4 ds5 ds6 -> ds3 }) -}
+c929be88809adbb1963362122e194653
+  week :: Main.Case -> Meetup.Schedule
+  RecSel Left Main.Case
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLL),1*U(A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Case) ->
+                 case ds of wild { Main.Case ds1 ds2 ds3 ds4 ds5 ds6 -> ds4 }) -}
+0ce3164056a2261e3b98dacd0654a676
+  year :: Main.Case -> GHC.Integer.Type.Integer
+  RecSel Left Main.Case
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Case) ->
+                 case ds of wild { Main.Case ds1 ds2 ds3 ds4 ds5 ds6 -> ds2 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

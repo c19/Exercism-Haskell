@@ -1,0 +1,116 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-06 14:56:21.305774 UTC
+
+interface prime-factors-1.0.0.3-Ep1h3rSsw34JLe6tteDmEj:PrimeFactors 8002
+  interface hash: 0683c60df8739e70b05ce88f7a103a8c
+  ABI hash: 224068a2c962b625ca64e6bf3f746e45
+  export-list hash: 3b58f647ebf8dac847f5bacf4f25e080
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  PrimeFactors.primeFactors
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      primes-0.2.1.0@primes-0.2.1.0-BN5qcmPxb1H2keY7Pz9jFX
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Float 33e2b9ffe427edd6a5c2fd6a3b26703c
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  primes-0.2.1.0@primes-0.2.1.0-BN5qcmPxb1H2keY7Pz9jFX:Data.Numbers.Primes 0fa8744becaca49c6475846765751f31
+081be149695b0a5cf293bd5525689286
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   PrimeFactors.$trModule2
+                   PrimeFactors.$trModule1) -}
+9c819d708a0aa496d17f0567f05176f4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "PrimeFactors"#) -}
+6dd1e182c0f98e79d73ca8c8ea9150ba
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "prime-factors-1.0.0.3-Ep1h3rSsw34JLe6tteDmEj"#) -}
+392744132137c42acd3fdd905e3c4f95
+  primeFactors ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (n :: GHC.Integer.Type.Integer) ->
+                 GHC.List.reverse1
+                   @ GHC.Integer.Type.Integer
+                   (PrimeFactors.primeFactors_primeFactors'
+                      (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                      n
+                      (GHC.List.takeWhile
+                         @ GHC.Integer.Type.Integer
+                         (let {
+                            ds :: GHC.Integer.Type.Integer
+                            = case GHC.Integer.Type.doubleFromInteger n of wild { DEFAULT ->
+                              case GHC.Integer.Type.decodeDoubleInteger
+                                     (GHC.Prim.sqrtDouble# wild) of ds1 { (#,#) ipv ipv1 ->
+                              case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.<# ipv1 0#) of wild1 {
+                                GHC.Types.False -> GHC.Integer.Type.shiftLInteger ipv ipv1
+                                GHC.Types.True
+                                -> let {
+                                     s :: GHC.Prim.Int# = GHC.Prim.negateInt# ipv1
+                                   } in
+                                   case GHC.Prim.tagToEnum#
+                                          @ GHC.Types.Bool
+                                          (GHC.Prim.># s 52#) of wild2 {
+                                     GHC.Types.False
+                                     -> case GHC.Integer.Type.ltInteger#
+                                               ipv
+                                               PrimeFactors.primeFactors1 of wild4 { DEFAULT ->
+                                        case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild4 of wild3 {
+                                          GHC.Types.False
+                                          -> case GHC.Integer.Type.integerToInt
+                                                    ipv of n1 { DEFAULT ->
+                                             GHC.Integer.Type.smallInteger
+                                               (GHC.Prim.uncheckedIShiftRA# n1 s) }
+                                          GHC.Types.True
+                                          -> case GHC.Integer.Type.integerToInt
+                                                    (GHC.Integer.Type.negateInteger
+                                                       ipv) of n1 { DEFAULT ->
+                                             GHC.Integer.Type.smallInteger
+                                               (GHC.Prim.negateInt#
+                                                  (GHC.Prim.uncheckedIShiftRA# n1 s)) } } }
+                                     GHC.Types.True -> PrimeFactors.primeFactors1 } } } }
+                          } in
+                          \ (ds1 :: GHC.Integer.Type.Integer) ->
+                          GHC.Integer.Type.leInteger ds1 ds)
+                         Data.Numbers.Primes.isPrime1))
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+7d15b5672034614a5effc7ad1e68a184
+  primeFactors1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+7e76d8a95bb4e1ac52b379acd589c1b8
+  primeFactors_primeFactors' ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+  {- Arity: 3, Strictness: <L,U><S,U><L,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

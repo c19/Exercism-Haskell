@@ -1,0 +1,117 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-07 13:08:08.45521 UTC
+
+interface largest-series-product-1.0.0.3-5WbGlQ8fXfwFLxdmpyEga4:Series 8002
+  interface hash: aeeaadc4dfc7af6151c22bef355d8940
+  ABI hash: fe07f5c4cc9a327e3def8e0fd0b9fd7a
+  export-list hash: 75e1b0c4bcbaa324716d273b9b09abba
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Series.largestProduct
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+0e9de3426768235b55aded8df8a7cb77
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Series.$trModule2
+                   Series.$trModule1) -}
+e715de2428183f3491d96e79c308383a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Series"#) -}
+e0098eceecf49087c2c6711e5d0c3e54
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "largest-series-product-1.0.0.3-5WbGlQ8fXfwFLxdmpyEga4"#) -}
+62ee27275d83cb1913c71d8dc5f6afcd
+  $wgo :: [[GHC.Types.Int]] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+41f0f5e9f37a4a707d8d75c598bc0a93
+  $wsliding :: GHC.Prim.Int# -> [a] -> [[a]]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0] -}
+1089aa6281b66e95ab0588dbf12d947e
+  largestProduct ::
+    GHC.Types.Int
+    -> GHC.Base.String -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>,
+     Unfolding: (\ (size :: GHC.Types.Int)
+                   (digits :: GHC.Base.String) ->
+                 case (Series.largestProduct_go digits)
+                        `cast`
+                      (Data.Monoid.N:Any[0]) of wild {
+                   GHC.Types.False
+                   -> case size of wild1 { GHC.Types.I# x ->
+                      case x of wild2 {
+                        DEFAULT
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<# wild2 0#) of wild3 {
+                             GHC.Types.False
+                             -> case GHC.List.$wlenAcc
+                                       @ GHC.Types.Char
+                                       digits
+                                       0# of ww2 { DEFAULT ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.># wild2 ww2) of wild4 {
+                                  GHC.Types.False
+                                  -> GHC.Base.Just
+                                       @ GHC.Integer.Type.Integer
+                                       (case Series.$wgo
+                                               (Series.$wsliding
+                                                  @ GHC.Types.Int
+                                                  wild2
+                                                  (GHC.Base.map
+                                                     @ GHC.Types.Char
+                                                     @ GHC.Types.Int
+                                                     Data.Char.digitToInt
+                                                     digits))
+                                               0# of ww { DEFAULT ->
+                                        GHC.Integer.Type.smallInteger ww })
+                                  GHC.Types.True -> GHC.Base.Nothing @ GHC.Integer.Type.Integer } }
+                             GHC.Types.True -> GHC.Base.Nothing @ GHC.Integer.Type.Integer }
+                        0# -> Series.largestProduct1 } }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Integer.Type.Integer }) -}
+55f4f5fbb8c3263a7976b87a0c12eb36
+  largestProduct1 :: GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ GHC.Integer.Type.Integer
+                   Series.largestProduct2) -}
+a0a17890eab07e65c63c2ca620b89956
+  largestProduct2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+73cb2cbcb7fdee9c02b80dc15526ce71
+  largestProduct_go :: [GHC.Types.Char] -> Data.Monoid.Any
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

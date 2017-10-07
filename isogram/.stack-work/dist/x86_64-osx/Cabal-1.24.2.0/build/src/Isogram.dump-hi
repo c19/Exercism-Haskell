@@ -1,0 +1,144 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-24 09:30:26.369244 UTC
+
+interface isogram-1.1.0.1-5wJn8p3oLSz4PfC8o8w8XS:Isogram 8002
+  interface hash: 3a7944bbfb12dbbc81844817f48d224a
+  ABI hash: cab8706fdb1020bcb1b3331d24f29d99
+  export-list hash: a3e3ea8d0dbc8cb33245c91856f076a7
+  orphan hash: 2c107025a6f92b7fcb815207a04a09fa
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Isogram.isIsogram
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set 3ed2324fd1e757464a8ac2b636a64e5a
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 1a2f735add6da1c0a9571441c327c084
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+ffda7012833c4a059505c752e879fdf5
+  $sfromList :: [GHC.Types.Char] -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [GHC.Types.Char]) ->
+                 case ds of wild {
+                   [] -> Data.Set.Base.Tip @ GHC.Types.Char
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> case x of dt { GHC.Types.C# ipv ->
+                           Data.Set.Base.Bin
+                             @ GHC.Types.Char
+                             1#
+                             dt
+                             (Data.Set.Base.Tip @ GHC.Types.Char)
+                             (Data.Set.Base.Tip @ GHC.Types.Char) }
+                        : ipv ipv1
+                        -> case x of wild2 { GHC.Types.C# c1 ->
+                           case ipv of wild3 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild4 {
+                             GHC.Types.False
+                             -> Isogram.$wgo5
+                                  1#
+                                  (Data.Set.Base.Bin
+                                     @ GHC.Types.Char
+                                     1#
+                                     wild2
+                                     (Data.Set.Base.Tip @ GHC.Types.Char)
+                                     (Data.Set.Base.Tip @ GHC.Types.Char))
+                                  wild1
+                             GHC.Types.True
+                             -> Isogram.$sfromList_go5
+                                  (Data.Set.Base.Bin
+                                     @ GHC.Types.Char
+                                     1#
+                                     wild2
+                                     (Data.Set.Base.Tip @ GHC.Types.Char)
+                                     (Data.Set.Base.Tip @ GHC.Types.Char))
+                                  wild1 } } } } }) -}
+3ced8e513787f059a62aa78fddb32a8a
+  $sfromList_go5 ::
+    Data.Set.Base.Set GHC.Types.Char
+    -> [GHC.Types.Char] -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+86491d9bcf4c7da147c1dbb39d07107e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Isogram.$trModule2
+                   Isogram.$trModule1) -}
+98c92723f62266ae4d35596f9c831c25
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Isogram"#) -}
+133fac5ff3c40e682a6a87716d4ff3fd
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "isogram-1.1.0.1-5wJn8p3oLSz4PfC8o8w8XS"#) -}
+51f48bd296d0ba20151b6a7e953d6dab
+  $w$sgo5 ::
+    GHC.Prim.Char#
+    -> Data.Set.Base.Set GHC.Types.Char
+    -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+862efb2b146c3f9f91ef6081b1a67ecd
+  $wgo5 ::
+    GHC.Prim.Int#
+    -> Data.Set.Base.Set GHC.Types.Char
+    -> [GHC.Types.Char]
+    -> Data.Set.Base.Set GHC.Types.Char
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+19eb0b8ab37c1b0a118b119cad9ac4f8
+  isIsogram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 let {
+                   d :: [GHC.Types.Char]
+                   = GHC.List.filter @ GHC.Types.Char Data.Char.isLetter s
+                 } in
+                 case Isogram.$sfromList
+                        (GHC.Base.map
+                           @ GHC.Types.Char
+                           @ GHC.Types.Char
+                           GHC.Unicode.toLower
+                           d) of wild {
+                   Data.Set.Base.Bin dt ds1 ds2 ds3
+                   -> case GHC.List.$wlenAcc @ GHC.Types.Char d 0# of ww2 { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# ww2 dt) }
+                   Data.Set.Base.Tip
+                   -> case GHC.List.$wlenAcc @ GHC.Types.Char d 0# of ww2 {
+                        DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } }) -}
+"SPEC/Isogram fromList @ Char" [ALWAYS] forall ($dOrd :: GHC.Classes.Ord
+                                                           GHC.Types.Char)
+  Data.Set.Base.fromList @ GHC.Types.Char $dOrd = Isogram.$sfromList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

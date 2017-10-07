@@ -1,0 +1,544 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-21 11:30:29.633024 UTC
+
+interface robot-simulator-1.0.0.3-KwygUXUpzGA9nJtpp5aRKY:Robot 8002
+  interface hash: fdecf8aec86e5bec4c88b62aed0d5a46
+  ABI hash: 9262195a2a892448b54f1ae2e8dc8580
+  export-list hash: aed69b4a33ef3bd5bf6bc071ec3bda5e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Robot.bearing
+  Robot.coordinates
+  Robot.mkRobot
+  Robot.simulate
+  Robot.turnLeft
+  Robot.turnRight
+  Robot.Bearing{Robot.East Robot.North Robot.South Robot.West}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing :: GHC.Enum.Enum Robot.Bearing
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Robot.Bearing
+                  Robot.$fEnumBearing_$csucc
+                  Robot.$fEnumBearing_$cpred
+                  Robot.$fEnumBearing_$ctoEnum
+                  Robot.$fEnumBearing_$cfromEnum
+                  Robot.$fEnumBearing_$cenumFrom
+                  Robot.$fEnumBearing_$cenumFromThen
+                  Robot.$fEnumBearing_$cenumFromTo
+                  Robot.$fEnumBearing_$cenumFromThenTo -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing1 :: [Robot.Bearing]
+  {- Unfolding: (Robot.$fEnumBearing_go4 3#) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing2 :: [Robot.Bearing]
+  {- Unfolding: (Robot.$fEnumBearing_go5 2#) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing3 :: [Robot.Bearing]
+  {- Unfolding: (Robot.$fEnumBearing_go6 1#) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing4 :: [Robot.Bearing]
+  {- Unfolding: (Robot.$fEnumBearing_go7 0#) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing5 :: GHC.Prim.Int# -> Robot.Bearing
+  {- Arity: 1, Strictness: <L,U>x -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing6 :: Robot.Bearing
+  {- Strictness: x -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing7 :: Robot.Bearing
+  {- Strictness: x -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$cenumFrom :: Robot.Bearing -> [Robot.Bearing]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Robot.Bearing) ->
+                 case a of wild {
+                   Robot.North -> Robot.$fEnumBearing4
+                   Robot.East -> Robot.$fEnumBearing3
+                   Robot.South -> Robot.$fEnumBearing2
+                   Robot.West -> Robot.$fEnumBearing1 }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$cenumFromThen ::
+    Robot.Bearing -> Robot.Bearing -> [Robot.Bearing]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Robot.Bearing) (b :: Robot.Bearing) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Robot.Bearing]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [Robot.Bearing]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [Robot.Bearing]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [Robot.Bearing]
+                                    Robot.$fEnumBearing_c
+                                    (GHC.Types.[] @ Robot.Bearing)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [Robot.Bearing]
+                                    Robot.$fEnumBearing_c
+                                    (GHC.Types.[] @ Robot.Bearing)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 3# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       Robot.North -> $j1 0#
+                       Robot.East -> $j1 1#
+                       Robot.South -> $j1 2#
+                       Robot.West -> $j1 3# }
+                 } in
+                 case a of wild {
+                   Robot.North -> $j 0#
+                   Robot.East -> $j 1#
+                   Robot.South -> $j 2#
+                   Robot.West -> $j 3# }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$cenumFromThenTo ::
+    Robot.Bearing -> Robot.Bearing -> Robot.Bearing -> [Robot.Bearing]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$cenumFromTo ::
+    Robot.Bearing -> Robot.Bearing -> [Robot.Bearing]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Robot.Bearing) (y :: Robot.Bearing) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Robot.Bearing]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Robot.North
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> Robot.$fEnumBearing_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ Robot.Bearing }
+                       Robot.East
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> Robot.$fEnumBearing_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ Robot.Bearing }
+                       Robot.South
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> Robot.$fEnumBearing_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ Robot.Bearing }
+                       Robot.West
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> Robot.$fEnumBearing_go x1
+                            GHC.Types.True -> GHC.Types.[] @ Robot.Bearing } }
+                 } in
+                 case x of wild {
+                   Robot.North -> $j 0#
+                   Robot.East -> $j 1#
+                   Robot.South -> $j 2#
+                   Robot.West -> $j 3# }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$cfromEnum :: Robot.Bearing -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Robot.Bearing) ->
+                 case a of wild {
+                   Robot.North -> GHC.Types.I# 0#
+                   Robot.East -> GHC.Types.I# 1#
+                   Robot.South -> GHC.Types.I# 2#
+                   Robot.West -> GHC.Types.I# 3# }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$cpred :: Robot.Bearing -> Robot.Bearing
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Robot.Bearing) ->
+                 case a of wild {
+                   Robot.North -> Robot.$fEnumBearing6
+                   Robot.East -> Robot.North
+                   Robot.South -> Robot.East
+                   Robot.West -> Robot.South }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$csucc :: Robot.Bearing -> Robot.Bearing
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Robot.Bearing) ->
+                 case a of wild {
+                   Robot.North -> Robot.East
+                   Robot.East -> Robot.South
+                   Robot.South -> Robot.West
+                   Robot.West -> Robot.$fEnumBearing7 }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_$ctoEnum :: GHC.Types.Int -> Robot.Bearing
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Robot.$w$ctoEnum ww1 }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_c ::
+    GHC.Types.Int -> [Robot.Bearing] -> [Robot.Bearing]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [Robot.Bearing]) ->
+                 GHC.Types.:
+                   @ Robot.Bearing
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ Robot.Bearing a })
+                   ys) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go1 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go2 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go3 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go4 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go5 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go6 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEnumBearing_go7 :: GHC.Prim.Int# -> [Robot.Bearing]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEqBearing :: GHC.Classes.Eq Robot.Bearing
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Robot.Bearing Robot.$fEqBearing_$c== Robot.$fEqBearing_$c/= -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEqBearing_$c/= ::
+    Robot.Bearing -> Robot.Bearing -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Robot.Bearing) (b :: Robot.Bearing) ->
+                 case a of wild {
+                   Robot.North
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Robot.North -> GHC.Types.False }
+                   Robot.East
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Robot.East -> GHC.Types.False }
+                   Robot.South
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Robot.South -> GHC.Types.False }
+                   Robot.West
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Robot.West -> GHC.Types.False } }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fEqBearing_$c== ::
+    Robot.Bearing -> Robot.Bearing -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Robot.Bearing) (ds1 :: Robot.Bearing) ->
+                 case ds of wild {
+                   Robot.North
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Robot.North -> GHC.Types.True }
+                   Robot.East
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Robot.East -> GHC.Types.True }
+                   Robot.South
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Robot.South -> GHC.Types.True }
+                   Robot.West
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Robot.West -> GHC.Types.True } }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fShowBearing :: GHC.Show.Show Robot.Bearing
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Robot.Bearing
+                  Robot.$fShowBearing_$cshowsPrec
+                  Robot.$fShowBearing_$cshow
+                  Robot.$fShowBearing_$cshowList -}
+3672fb3be6c08657bec2cccb2bbf4206
+  $fShowBearing1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "West"#) -}
+85093bc61ae13e89e224b4d112baa242
+  $fShowBearing2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "South"#) -}
+c501914c04ae6db8fd982ce7dcf1e535
+  $fShowBearing3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "East"#) -}
+e4e18c3bf7774b923f8da9195055ef3b
+  $fShowBearing4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "North"#) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fShowBearing_$cshow :: Robot.Bearing -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Robot.Bearing) ->
+                 Robot.$fShowBearing_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fShowBearing_$cshowList :: [Robot.Bearing] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Robot.Bearing
+                   Robot.$w$cshowsPrec) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $fShowBearing_$cshowsPrec ::
+    GHC.Types.Int -> Robot.Bearing -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Robot.Bearing)
+                   (w2 :: GHC.Base.String) ->
+                 Robot.$w$cshowsPrec w1 w2) -}
+fd82fbd79928584424e4e636a69ebcae
+  $tc'East :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8073294672417098872##
+                   4957882218683840514##
+                   Robot.$trModule
+                   Robot.$tc'East1) -}
+a114536d6894029eec1813998210a9b5
+  $tc'East1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'East"#) -}
+8c7496470fad2410870fecbda6f8779e
+  $tc'North :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9483813517611185777##
+                   10029069439180071206##
+                   Robot.$trModule
+                   Robot.$tc'North1) -}
+7e981005aee48c50fcd12196abb50098
+  $tc'North1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'North"#) -}
+d1364495bfae3fb6b31bed032802965a
+  $tc'South :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1476402146465100202##
+                   12252120313576905562##
+                   Robot.$trModule
+                   Robot.$tc'South1) -}
+22679c32a152106a79b014e0b45bf37d
+  $tc'South1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'South"#) -}
+367f3ba389b6acf4c9cdea41f2484a77
+  $tc'West :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6316730541854433193##
+                   3793598521755793348##
+                   Robot.$trModule
+                   Robot.$tc'West1) -}
+fd154e40794d41d0b5b73c426fe09c17
+  $tc'West1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'West"#) -}
+04d3541f822164fc584763392684f20b
+  $tcBearing :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17898573046062363877##
+                   17302545714240020444##
+                   Robot.$trModule
+                   Robot.$tcBearing1) -}
+7d866f9d59f577e647058716fa1a7c6a
+  $tcBearing1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Bearing"#) -}
+eded65f69c047cf3367de80578697dce
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Robot.$trModule2 Robot.$trModule1) -}
+e0df1f55a397c5510fbab34364af59cf
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Robot"#) -}
+701d383be3ade7c2bc4812ef3ebe588e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "robot-simulator-1.0.0.3-KwygUXUpzGA9nJtpp5aRKY"#) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $w$cshowsPrec ::
+    Robot.Bearing -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Robot.Bearing) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Robot.North -> GHC.Base.++ @ GHC.Types.Char Robot.$fShowBearing4 w1
+                   Robot.East -> GHC.Base.++ @ GHC.Types.Char Robot.$fShowBearing3 w1
+                   Robot.South -> GHC.Base.++ @ GHC.Types.Char Robot.$fShowBearing2 w1
+                   Robot.West
+                   -> GHC.Base.++ @ GHC.Types.Char Robot.$fShowBearing1 w1 }) -}
+8dc70a9c872c11330ec8a53788ea8d75
+  $w$ctoEnum :: GHC.Prim.Int# -> Robot.Bearing
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> Robot.$fEnumBearing5 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 3#) of wild1 {
+                        GHC.Types.False -> Robot.$fEnumBearing5 ww
+                        GHC.Types.True -> GHC.Prim.tagToEnum# @ Robot.Bearing ww } }) -}
+26e0a506aadbf293bb170791560324a1
+  $wsimulate ::
+    Robot.Bearing
+    -> Robot.Position
+    -> GHC.Base.String
+    -> (# Robot.Bearing, Robot.Position #)
+  {- Arity: 3, Strictness: <L,U><L,U(U,U)><S,1*U>, Inline: [0] -}
+8dc70a9c872c11330ec8a53788ea8d75
+  data Bearing = North | East | South | West
+72385c8f240f0d7847af12e095874e72
+  type Position =
+    (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+21841ca8713ffaa6f2128835e05fb575
+  type Robot = (Robot.Bearing, Robot.Position)
+75c843e292681069f6d89e4ab2e910fd
+  bearing :: Robot.Robot -> Robot.Bearing
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Robot.Bearing, Robot.Position)) ->
+                 case ds of wild { (,) b ds1 -> b }) -}
+2f28e97f71ab49ed1ab958ace1e200e0
+  coordinates ::
+    Robot.Robot -> (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (Robot.Bearing, Robot.Position)) ->
+                 case ds of wild { (,) ds1 p -> p }) -}
+810466a751005b4d5804417bb1c262cd
+  mkRobot ::
+    Robot.Bearing
+    -> (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+    -> Robot.Robot
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Tuple.(,)
+                   @ Robot.Bearing
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)) -}
+e997db4520127581f0de25d0039b7845
+  simulate :: Robot.Robot -> GHC.Base.String -> Robot.Robot
+  {- Arity: 2, Strictness: <S,1*U(U,U(U,U))><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Robot.Robot) (w1 :: GHC.Base.String) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case Robot.$wsimulate ww1 ww2 w1 of ww3 { (#,#) ww4 ww5 ->
+                 (ww4, ww5) } }) -}
+663bd191f903b6000a45f4d63668fc5e
+  turnLeft :: Robot.Bearing -> Robot.Bearing
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (direction :: Robot.Bearing) ->
+                 case direction of wild {
+                   Robot.North -> Robot.turnLeft5
+                   Robot.East -> Robot.turnLeft4
+                   Robot.South -> Robot.turnLeft3
+                   Robot.West -> Robot.turnLeft1 }) -}
+f1ecfb4e7db53e8a4f2b5abf8f2678e4
+  turnLeft1 :: Robot.Bearing
+  {- Unfolding: (Robot.turnLeft2 6#) -}
+a03a323a5b73a39a42dd98be1f44e7a8
+  turnLeft2 :: GHC.Prim.Int# -> Robot.Bearing
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (x :: GHC.Prim.Int#)[OneShot] ->
+                 case GHC.Classes.modInt# x 4# of ww2 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww2 0#) of wild {
+                   GHC.Types.False -> Robot.$fEnumBearing5 ww2
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww2 3#) of wild1 {
+                        GHC.Types.False -> Robot.$fEnumBearing5 ww2
+                        GHC.Types.True -> GHC.Prim.tagToEnum# @ Robot.Bearing ww2 } } }) -}
+0434c2402990711730941164e628cef6
+  turnLeft3 :: Robot.Bearing
+  {- Unfolding: (Robot.turnLeft2 5#) -}
+8b8dfd1625e09a9bfe739869f21bcd4d
+  turnLeft4 :: Robot.Bearing
+  {- Unfolding: (Robot.turnLeft2 4#) -}
+513b6f1506a36d3838aa53bd8a74a07a
+  turnLeft5 :: Robot.Bearing
+  {- Unfolding: (Robot.turnLeft2 3#) -}
+475936c78f021527a6a1469a67bdd912
+  turnRight :: Robot.Bearing -> Robot.Bearing
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (direction :: Robot.Bearing) ->
+                 case direction of wild {
+                   Robot.North -> Robot.turnRight2
+                   Robot.East -> Robot.turnRight1
+                   Robot.South -> Robot.turnLeft5
+                   Robot.West -> Robot.turnLeft4 }) -}
+d4bd0d5ea5aef6b10576b3010630e23b
+  turnRight1 :: Robot.Bearing
+  {- Unfolding: (Robot.turnLeft2 2#) -}
+96c387a9a91cef7756baff84f2d5fc79
+  turnRight2 :: Robot.Bearing
+  {- Unfolding: (Robot.turnLeft2 1#) -}
+instance [safe] GHC.Enum.Enum [Robot.Bearing] = Robot.$fEnumBearing
+instance [safe] GHC.Classes.Eq [Robot.Bearing] = Robot.$fEqBearing
+instance [safe] GHC.Show.Show [Robot.Bearing] = Robot.$fShowBearing
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

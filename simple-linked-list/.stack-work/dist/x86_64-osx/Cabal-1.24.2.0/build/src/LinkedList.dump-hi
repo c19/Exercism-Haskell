@@ -1,0 +1,669 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-21 13:12:34.010131 UTC
+
+interface simple-linked-list-0.1.0.2-6wfMmtM7ZAwHZomn5dCWIE:LinkedList 8002
+  interface hash: f086d7d37415a6e3562f0eff06c671e5
+  ABI hash: 9eee41d84d9310940f65408f108d1653
+  export-list hash: 501b3a788b71e66f92f2e5c998ada556
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LinkedList.datum
+  LinkedList.fromList
+  LinkedList.isNil
+  LinkedList.new
+  LinkedList.next
+  LinkedList.nil
+  LinkedList.reverseLinkedList
+  LinkedList.toList
+  LinkedList.LinkedList
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+4a561a9056d5ad410715bfe00b5f3076
+  $fEqLinkedList ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (LinkedList.LinkedList a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dEq :: GHC.Classes.Eq a).
+                  @ (LinkedList.LinkedList a)
+                  (LinkedList.$fEqLinkedList_$c== @ a $dEq)
+                  (LinkedList.$fEqLinkedList_$c/= @ a $dEq) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fEqLinkedList_$c/= ::
+    GHC.Classes.Eq a =>
+    LinkedList.LinkedList a
+    -> LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (a1 :: LinkedList.LinkedList a)
+                   (b :: LinkedList.LinkedList a) ->
+                 case LinkedList.$fEqLinkedList_$c== @ a $dEq a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fEqLinkedList_$c== ::
+    GHC.Classes.Eq a =>
+    LinkedList.LinkedList a
+    -> LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U> -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList ::
+    Data.Foldable.Foldable LinkedList.LinkedList
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ LinkedList.LinkedList
+                  LinkedList.$fFoldableLinkedList_$cfold
+                  LinkedList.$fFoldableLinkedList_$cfoldMap
+                  LinkedList.$fFoldableLinkedList_$cfoldr
+                  LinkedList.$fFoldableLinkedList_$cfoldr'
+                  LinkedList.$fFoldableLinkedList_$cfoldl
+                  LinkedList.$fFoldableLinkedList_$cfoldl'
+                  LinkedList.$fFoldableLinkedList_$cfoldr1
+                  LinkedList.$fFoldableLinkedList_$cfoldl1
+                  LinkedList.$fFoldableLinkedList_$ctoList
+                  LinkedList.$fFoldableLinkedList_$cnull
+                  LinkedList.$fFoldableLinkedList_$clength
+                  LinkedList.$fFoldableLinkedList_$celem
+                  LinkedList.$fFoldableLinkedList_$cmaximum
+                  LinkedList.$fFoldableLinkedList_$cminimum
+                  LinkedList.$fFoldableLinkedList_$csum
+                  LinkedList.$fFoldableLinkedList_$cproduct -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList1 ::
+    GHC.Num.Num a => LinkedList.LinkedList a -> Data.Monoid.Product a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,1*U,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   (eta :: LinkedList.LinkedList a) ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ (Data.Monoid.Product a)
+                   (let {
+                      f1 :: a -> a -> a = GHC.Num.* @ a $dNum
+                    } in
+                    (\ (x :: a) -> f1 x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Product[0] <a>_R)
+                     ->_R Sym (Data.Monoid.N:Product[0] <a>_R)))
+                   (Data.Monoid.$fMonoidProduct2 @ a $dNum)
+                     `cast`
+                   (Sym (Data.Monoid.N:Product[0] <a>_R))
+                   eta) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList2 ::
+    GHC.Num.Num a => LinkedList.LinkedList a -> Data.Monoid.Sum a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,A,A,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   (eta :: LinkedList.LinkedList a) ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ (Data.Monoid.Sum a)
+                   (let {
+                      f1 :: a -> a -> a = GHC.Num.+ @ a $dNum
+                    } in
+                    (\ (x :: a) -> f1 x)
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Sum[0] <a>_R)
+                     ->_R Sym (Data.Monoid.N:Sum[0] <a>_R)))
+                   (Data.Monoid.$fMonoidSum2 @ a $dNum)
+                     `cast`
+                   (Sym (Data.Monoid.N:Sum[0] <a>_R))
+                   eta) -}
+2e60662d7340d1a629e7d59e23cef679
+  $fFoldableLinkedList3 :: a
+  {- Strictness: x -}
+be5b9a38fab58c2681d6939bd5e46bb7
+  $fFoldableLinkedList4 :: a
+  {- Strictness: x -}
+281a9ab7089fe21cc00390e3eb7de68d
+  $fFoldableLinkedList5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+588cee46a729725a8b08553531341758
+  $fFoldableLinkedList6 ::
+    a
+    -> (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a
+                   (x :: a)
+                   (k :: GHC.Types.Int -> GHC.Types.Int)[OneShot]
+                   (z :: GHC.Types.Int) ->
+                 case z of wild { GHC.Types.I# x1 ->
+                 k (GHC.Types.I# (GHC.Prim.+# x1 1#)) }) -}
+b0db2c97f88e74d0ce795abe62e6037e
+  $fFoldableLinkedList7 :: a -> GHC.Types.Bool -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds :: a) (ds1 :: GHC.Types.Bool) -> GHC.Types.False) -}
+210b8b4b72c44170c46e8246fc2642d4
+  $fFoldableLinkedList8 :: a
+  {- Strictness: x -}
+9943edb294a6dfb953637a084c30311e
+  $fFoldableLinkedList9 :: a
+  {- Strictness: x -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$celem ::
+    GHC.Classes.Eq a => a -> LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 let {
+                   f :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq eta
+                 } in
+                 let {
+                   lvl8 :: a -> GHC.Types.Bool -> GHC.Types.Bool {- Arity: 2 -}
+                   = \ (x :: a) (ds1 :: GHC.Types.Bool)[OneShot] ->
+                     case f x of wild {
+                       GHC.Types.False -> ds1 GHC.Types.True -> GHC.Types.True }
+                 } in
+                 (\ (eta1 :: LinkedList.LinkedList a) ->
+                  LinkedList.$fFoldableLinkedList_$cfoldr
+                    @ a
+                    @ Data.Monoid.Any
+                    lvl8
+                      `cast`
+                    (<a>_R
+                     ->_R Sym (Data.Monoid.N:Any[0])
+                     ->_R Sym (Data.Monoid.N:Any[0]))
+                    GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                    eta1)
+                   `cast`
+                 (<LinkedList.LinkedList a>_R ->_R Data.Monoid.N:Any[0])) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfold ::
+    GHC.Base.Monoid m => LinkedList.LinkedList m -> m
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(1*U,1*U,A)><S,1*U>,
+     Unfolding: (\ @ m
+                   ($dMonoid :: GHC.Base.Monoid m)
+                   (eta :: LinkedList.LinkedList m) ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ m
+                   @ m
+                   (let {
+                      f1 :: m -> m -> m = GHC.Base.mappend @ m $dMonoid
+                    } in
+                    \ (x :: m) -> f1 x)
+                   (GHC.Base.mempty @ m $dMonoid)
+                   eta) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldMap ::
+    GHC.Base.Monoid m => (a -> m) -> LinkedList.LinkedList a -> m
+  {- Arity: 2, Strictness: <L,U(1*U,1*U,A)><L,C(U)>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ m
+                   @ a
+                   ($dMonoid :: GHC.Base.Monoid m)
+                   (f :: a -> m)
+                   (eta :: LinkedList.LinkedList a) ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ m
+                   (let {
+                      f1 :: m -> m -> m = GHC.Base.mappend @ m $dMonoid
+                    } in
+                    \ (x :: a) -> f1 (f x))
+                   (GHC.Base.mempty @ m $dMonoid)
+                   eta) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldl ::
+    (b -> a -> b) -> b -> LinkedList.LinkedList a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (f :: b -> a -> b)
+                   (z :: b)
+                   (t1 :: LinkedList.LinkedList a) ->
+                 (LinkedList.$fFoldableLinkedList_$cfoldr
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo b))
+                    (\ (x :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo b))[OneShot]
+                       (eta1 :: b) ->
+                     eta `cast` (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                       (f eta1 x))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo b)>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    (GHC.Base.id @ b)
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    t1)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                   z) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldl' ::
+    (b -> a -> b) -> b -> LinkedList.LinkedList a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (f :: b -> a -> b)
+                   (z0 :: b)
+                   (xs :: LinkedList.LinkedList a) ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ (b -> b)
+                   (\ (x :: a) (k :: b -> b)[OneShot] (z :: b) ->
+                    case f z x of vx { DEFAULT -> k vx })
+                   (GHC.Base.id @ b)
+                   xs
+                   z0) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldl1 ::
+    (a -> a -> a) -> LinkedList.LinkedList a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   (f :: a -> a -> a)
+                   (xs :: LinkedList.LinkedList a) ->
+                 case (LinkedList.$fFoldableLinkedList_$cfoldr
+                         @ a
+                         @ (Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                         (\ (x :: a)
+                            (eta :: Data.Monoid.Dual
+                                      (Data.Monoid.Endo (GHC.Base.Maybe a)))[OneShot]
+                            (eta1 :: GHC.Base.Maybe a) ->
+                          eta
+                            `cast`
+                          (Data.Monoid.N:Dual[0]
+                               (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                            (GHC.Base.Just
+                               @ a
+                               (case eta1 of wild {
+                                  GHC.Base.Nothing -> x GHC.Base.Just x1 -> f x1 x })))
+                           `cast`
+                         (<a>_R
+                          ->_R <Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a))>_R
+                          ->_R Sym (Data.Monoid.N:Dual[0]
+                                        (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         (GHC.Base.id @ (GHC.Base.Maybe a))
+                           `cast`
+                         (Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         xs)
+                        `cast`
+                      (Data.Monoid.N:Dual[0]
+                           (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                        (GHC.Base.Nothing @ a) of wild {
+                   GHC.Base.Nothing -> LinkedList.$fFoldableLinkedList8 @ a
+                   GHC.Base.Just v -> v }) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldr ::
+    (a -> b -> b) -> b -> LinkedList.LinkedList a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U> -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldr' ::
+    (a -> b -> b) -> b -> LinkedList.LinkedList a -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (f :: a -> b -> b)
+                   (z0 :: b)
+                   (xs :: LinkedList.LinkedList a) ->
+                 (LinkedList.$fFoldableLinkedList_$cfoldr
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                    (\ (x :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))[OneShot]
+                       (eta1 :: b -> b) ->
+                     eta
+                       `cast`
+                     (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                       (\ (z :: b) -> case f x z of vx { DEFAULT -> eta1 vx }))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo (b -> b))>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    (GHC.Base.id @ (b -> b))
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    xs)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   z0) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cfoldr1 ::
+    (a -> a -> a) -> LinkedList.LinkedList a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   (f :: a -> a -> a)
+                   (xs :: LinkedList.LinkedList a) ->
+                 case LinkedList.$fFoldableLinkedList_$cfoldr
+                        @ a
+                        @ (GHC.Base.Maybe a)
+                        (\ (x :: a) (m :: GHC.Base.Maybe a)[OneShot] ->
+                         GHC.Base.Just
+                           @ a
+                           (case m of wild {
+                              GHC.Base.Nothing -> x GHC.Base.Just y -> f x y }))
+                        (GHC.Base.Nothing @ a)
+                        xs of wild {
+                   GHC.Base.Nothing -> LinkedList.$fFoldableLinkedList9 @ a
+                   GHC.Base.Just v -> v }) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$clength ::
+    LinkedList.LinkedList a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (xs :: LinkedList.LinkedList a) ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   (LinkedList.$fFoldableLinkedList6 @ a)
+                   (GHC.Base.id @ GHC.Types.Int)
+                   xs
+                   LinkedList.$fFoldableLinkedList5) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cmaximum ::
+    GHC.Classes.Ord a => LinkedList.LinkedList a -> a
+  {- Arity: 2, Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: LinkedList.LinkedList a) ->
+                 case (LinkedList.$fFoldableLinkedList_$cfoldr
+                         @ a
+                         @ (Data.Foldable.Max a)
+                         (\ (x :: a) (eta1 :: Data.Foldable.Max a)[OneShot] ->
+                          case eta1 `cast` (Data.Foldable.N:Max[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.>= @ a $dOrd x ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Max[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                         eta)
+                        `cast`
+                      (Data.Foldable.N:Max[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> LinkedList.$fFoldableLinkedList4 @ a
+                   GHC.Base.Just v -> v }) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cminimum ::
+    GHC.Classes.Ord a => LinkedList.LinkedList a -> a
+  {- Arity: 2, Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: LinkedList.LinkedList a) ->
+                 case (LinkedList.$fFoldableLinkedList_$cfoldr
+                         @ a
+                         @ (Data.Foldable.Min a)
+                         (\ (x :: a) (eta1 :: Data.Foldable.Min a)[OneShot] ->
+                          case eta1 `cast` (Data.Foldable.N:Min[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.<= @ a $dOrd x ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Min[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                         eta)
+                        `cast`
+                      (Data.Foldable.N:Min[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> LinkedList.$fFoldableLinkedList3 @ a
+                   GHC.Base.Just v -> v }) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cnull ::
+    LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ GHC.Types.Bool
+                   (LinkedList.$fFoldableLinkedList7 @ a)
+                   GHC.Types.True) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$cproduct ::
+    GHC.Num.Num a => LinkedList.LinkedList a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,1*U,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                LinkedList.$fFoldableLinkedList1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <LinkedList.LinkedList a>_R
+                 ->_R Data.Monoid.N:Product[0] <a>_R) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$csum ::
+    GHC.Num.Num a => LinkedList.LinkedList a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,A,A,A,A,A,1*C1(U))><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                LinkedList.$fFoldableLinkedList2
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <LinkedList.LinkedList a>_R
+                 ->_R Data.Monoid.N:Sum[0] <a>_R) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fFoldableLinkedList_$ctoList :: LinkedList.LinkedList a -> [a]
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (t1 :: LinkedList.LinkedList a) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    LinkedList.$fFoldableLinkedList_$cfoldr @ a @ b c n t1)) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fShowLinkedList ::
+    GHC.Show.Show a => GHC.Show.Show (LinkedList.LinkedList a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (LinkedList.LinkedList a)
+                  (LinkedList.$fShowLinkedList_$cshowsPrec @ a $dShow)
+                  (LinkedList.$fShowLinkedList_$cshow @ a $dShow)
+                  (LinkedList.$fShowLinkedList_$cshowList @ a $dShow) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fShowLinkedList_$cshow ::
+    GHC.Show.Show a => LinkedList.LinkedList a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: LinkedList.LinkedList a) ->
+                 LinkedList.$fShowLinkedList_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fShowLinkedList_$cshowList ::
+    GHC.Show.Show a => [LinkedList.LinkedList a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [LinkedList.LinkedList a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (LinkedList.LinkedList a)
+                   (LinkedList.$fShowLinkedList_$cshowsPrec
+                      @ a
+                      $dShow
+                      LinkedList.$fFoldableLinkedList5)
+                   eta
+                   eta1) -}
+4a561a9056d5ad410715bfe00b5f3076
+  $fShowLinkedList_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> LinkedList.LinkedList a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U> -}
+d87cd19ff837f5507f6d4e35ffc1268b
+  $tc'Empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18159612762028643168##
+                   6632570897199782925##
+                   LinkedList.$trModule
+                   LinkedList.$tc'Empty1) -}
+8ab97448738d5cb576e32f722a9eb45d
+  $tc'Empty1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Empty"#) -}
+6d7fa3c9b90b6919df8b8188efeb2827
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6118105593064554623##
+                   2859169495219098541##
+                   LinkedList.$trModule
+                   LinkedList.$tc'Node1) -}
+ab073f98d45e83b999a73c8aeb15aca0
+  $tc'Node1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Node"#) -}
+6acf1580feeefd1d48289ba0517dc022
+  $tcLinkedList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   769518021204359519##
+                   14848323065778414568##
+                   LinkedList.$trModule
+                   LinkedList.$trModule1) -}
+1a5b663bd167f71d3704f767f91ef777
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LinkedList.$trModule2
+                   LinkedList.$trModule1) -}
+664d876970ab7957d7da46f440df9e8b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LinkedList"#) -}
+4421dac708779e0daa647d19a15fa505
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "simple-linked-list-0.1.0.2-6wfMmtM7ZAwHZomn5dCWIE"#) -}
+4a561a9056d5ad410715bfe00b5f3076
+  data LinkedList a = Empty | Node a (LinkedList.LinkedList a)
+2887239c0947bb187688a427c5b3935a
+  datum :: LinkedList.LinkedList a -> a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Empty -> LinkedList.datum1 @ a
+                   LinkedList.Node a1 ds1 -> a1 }) -}
+f85f0e6b28eef974422fa36e879dee0a
+  datum1 :: a
+  {- Strictness: x -}
+818a69e4715a274da138e59b69052be3
+  fromList :: [a] -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (eta :: [a]) -> LinkedList.fromList1 @ a eta) -}
+89bf8039acf440d5ee8ec538376e9cfd
+  fromList1 :: [a] -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+aa268ca018a8fd02da409f292eb18169
+  isNil :: LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Empty -> GHC.Types.True
+                   LinkedList.Node ipv ipv1 -> GHC.Types.False }) -}
+190a2ecf189ac548bef996b46f134a18
+  new :: a -> LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Unfolding: InlineRule (0, True, True) LinkedList.Node -}
+df6252d0b93ad84bcd3b9b739eb50723
+  next :: LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Empty -> LinkedList.next1 @ a
+                   LinkedList.Node x linkedList -> linkedList }) -}
+b5ff707d0e1c3697686f9246b50dda6a
+  next1 :: LinkedList.LinkedList a
+  {- Strictness: x -}
+1071d9a5e5d792ab3beb9e12ea23e756
+  nil :: LinkedList.LinkedList a
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) LinkedList.Empty -}
+8ea79f8fa873c120795fef80128b4e85
+  reverseLinkedList ::
+    LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ (LinkedList.LinkedList a)
+                   (LinkedList.Node @ a)
+                   (LinkedList.Empty @ a)) -}
+b75e03c32e25d154c3ddae8a63e59786
+  toList :: LinkedList.LinkedList a -> [a]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 LinkedList.$fFoldableLinkedList_$cfoldr
+                   @ a
+                   @ [a]
+                   (LinkedList.toList1 @ a)
+                   (GHC.Types.[] @ a)) -}
+5804987283b813c07137e3dfeb34a66b
+  toList1 :: a -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (a1 :: a) (b :: [a]) ->
+                 GHC.Base.augment
+                   @ a
+                   (\ @ b1 (c :: a -> b1 -> b1)[OneShot] (n :: b1)[OneShot] ->
+                    GHC.Base.foldr @ a @ b1 c n b)
+                   (GHC.Types.: @ a a1 (GHC.Types.[] @ a))) -}
+instance [safe] GHC.Classes.Eq [LinkedList.LinkedList]
+  = LinkedList.$fEqLinkedList
+instance [safe] Data.Foldable.Foldable [LinkedList.LinkedList]
+  = LinkedList.$fFoldableLinkedList
+instance [safe] GHC.Show.Show [LinkedList.LinkedList]
+  = LinkedList.$fShowLinkedList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

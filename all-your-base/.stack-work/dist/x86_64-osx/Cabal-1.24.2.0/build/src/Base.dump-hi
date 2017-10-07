@@ -1,0 +1,56 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-07 12:41:10.205834 UTC
+
+interface all-your-base-1.0.0.3-4J6PMLg3gePDz1NaM6x524:Base 8002
+  interface hash: 74c4b0dda2de42035dda5bf943c70cb4
+  ABI hash: f26c70be5672a06aae2b7c95f9edf039
+  export-list hash: d70c48424d5bc241b7c9a28e77dbeb67
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Base.rebase
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+c3a812837cd14925bb81e39e467f6544
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Base.$trModule2 Base.$trModule1) -}
+1c3f785bfa0429ca04b8381d4c89ecda
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Base"#) -}
+00b49de53fabd1253226110b3628bb90
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "all-your-base-1.0.0.3-4J6PMLg3gePDz1NaM6x524"#) -}
+9c4dbc7e1b7e4f3f29ddd4de1d9879b6
+  rebase ::
+    GHC.Real.Integral a => a -> a -> [a] -> GHC.Base.Maybe [a]
+  {- Arity: 4,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,C(C1(U)),C(C1(U)),A,A,A)><L,U><L,U><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

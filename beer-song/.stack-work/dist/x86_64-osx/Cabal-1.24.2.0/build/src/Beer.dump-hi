@@ -1,0 +1,217 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-16 15:29:51.401586 UTC
+
+interface beer-song-0.1.0.2-EiOPq9esY4I1MClX7gnSFy:Beer 8002
+  interface hash: b8dcfe78e5ca96644bf002dd3b9406c6
+  ABI hash: 51eaae733bed2245b0412f333985a837
+  export-list hash: 9bc016f7e25f35d825157bea2f7f2613
+  orphan hash: 620b4fe4e6b583c7d8a7eea5f3a37ec2
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Beer.song
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:Text.Printf 6701574960cd2af960fec5d940be0c25
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+f4ad6549a7a7caede5ecf24260c791fb
+  $s$fPrintfArg[]_$s$fPrintfArg[]_$cparseFormat ::
+    [GHC.Types.Char] -> Text.Printf.ModifierParser
+  {- Arity: 2, Strictness: <L,A><S,1*U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds1 :: [GHC.Types.Char]) (ds2 :: [GHC.Types.Char]) ->
+                 case ds2 of wild {
+                   [] -> Text.Printf.errorShortFormat @ Text.Printf.FormatParse
+                   : c1 cs
+                   -> Text.Printf.FormatParse
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        c1
+                        cs }) -}
+caf5121ff4cc9d1e00afa67bd9e530f8
+  $sprintf3 ::
+    GHC.Base.String -> [Text.Printf.UPrintf] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (fmts :: GHC.Base.String)
+                   (args :: [Text.Printf.UPrintf]) ->
+                 GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   Text.Printf.$fIsCharChar_$cfromChar
+                   (Text.Printf.uprintfs
+                      fmts
+                      (GHC.List.reverse1
+                         @ Text.Printf.UPrintf
+                         args
+                         (GHC.Types.[] @ Text.Printf.UPrintf))
+                      (GHC.Types.[] @ GHC.Types.Char))) -}
+cc2adec86355ec5f02a8bce3bb9f2859
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Beer.$trModule2 Beer.$trModule1) -}
+a6a3ad0b8fc32c73a9404bdd8c46f7ac
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Beer"#) -}
+21d0b7992fe8c41ac95ec20f9e55ed10
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "beer-song-0.1.0.2-EiOPq9esY4I1MClX7gnSFy"#) -}
+15d818538de97ba77e3eb42c2f0d9492
+  $wc ::
+    GHC.Types.Int
+    -> [[GHC.Types.Char]] -> (# [GHC.Types.Char], [[GHC.Types.Char]] #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: [[GHC.Types.Char]]) ->
+                 (# case w of wild { GHC.Types.I# x ->
+                    case x of wild1 {
+                      DEFAULT
+                      -> let {
+                           a1 :: [GHC.Types.Char] = Beer.$wshowBottle wild1
+                         } in
+                         let {
+                           a2 :: [GHC.Types.Char] = Beer.$wshowBottle (GHC.Prim.-# wild1 1#)
+                         } in
+                         Beer.$sprintf3
+                           Beer.song4
+                           (GHC.Types.:
+                              @ (Text.Printf.ModifierParser, Text.Printf.FieldFormatter)
+                              (Beer.$s$fPrintfArg[]_$s$fPrintfArg[]_$cparseFormat a2,
+                               \ (w2 :: Text.Printf.FieldFormat) ->
+                               case w2 of ww { Text.Printf.FieldFormat ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                               case ww7 of ww8 { GHC.Types.C# ww9 ->
+                               Text.Printf.$wformatString
+                                 @ GHC.Types.Char
+                                 Text.Printf.$fIsCharChar
+                                 a2
+                                 ww1
+                                 ww2
+                                 ww3
+                                 ww9 } })
+                              (GHC.Types.:
+                                 @ (Text.Printf.ModifierParser, Text.Printf.FieldFormatter)
+                                 (Beer.$s$fPrintfArg[]_$s$fPrintfArg[]_$cparseFormat a1,
+                                  \ (w2 :: Text.Printf.FieldFormat) ->
+                                  case w2 of ww { Text.Printf.FieldFormat ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                                  case ww7 of ww8 { GHC.Types.C# ww9 ->
+                                  Text.Printf.$wformatString
+                                    @ GHC.Types.Char
+                                    Text.Printf.$fIsCharChar
+                                    a1
+                                    ww1
+                                    ww2
+                                    ww3
+                                    ww9 } })
+                                 (GHC.Types.:
+                                    @ (Text.Printf.ModifierParser, Text.Printf.FieldFormatter)
+                                    (Beer.$s$fPrintfArg[]_$s$fPrintfArg[]_$cparseFormat a1,
+                                     \ (w2 :: Text.Printf.FieldFormat) ->
+                                     case w2 of ww { Text.Printf.FieldFormat ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                                     case ww7 of ww8 { GHC.Types.C# ww9 ->
+                                     Text.Printf.$wformatString
+                                       @ GHC.Types.Char
+                                       Text.Printf.$fIsCharChar
+                                       a1
+                                       ww1
+                                       ww2
+                                       ww3
+                                       ww9 } })
+                                    (GHC.Types.[] @ Text.Printf.UPrintf))))
+                      0# -> Beer.song3
+                      1# -> Beer.song2 } },
+                    w1 #)) -}
+c8338f90ef6791ab233a8908d8fcf1c6
+  $wshowBottle :: GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww 1#) of wild {
+                   GHC.Types.False
+                   -> case ww of wild1 { DEFAULT -> Beer.song7 1# -> Beer.song6 }
+                   GHC.Types.True
+                   -> case GHC.Show.$wshowSignedInt
+                             0#
+                             ww
+                             (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                      GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                        Beer.song5 } }) -}
+c05871eabaadea5a4e5dc9ff46980883
+  song :: GHC.Base.String
+  {- Unfolding: (case GHC.Enum.efdtIntDnFB
+                        @ [[GHC.Types.Char]]
+                        Beer.song_c
+                        (GHC.Types.[] @ [GHC.Types.Char])
+                        99#
+                        98#
+                        0# of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : x xs1
+                   -> Data.OldList.intercalate_$spoly_go
+                        @ GHC.Types.Char
+                        x
+                        (Data.OldList.prependToAll @ [GHC.Types.Char] Beer.song1 xs1) }) -}
+87440e71d86728ba0b788203b828f831
+  song1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+884c02355b8f3fc6e5c3f22c7361b674
+  song2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "1 bottle of beer on the wall, 1 bottle of beer.\n\
+                   \Take it down and pass it around, no more bottles of beer on the wall.\n"#) -}
+d09e32da9a28c0486d063dc57140ba61
+  song3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "No more bottles of beer on the wall, no more bottles of beer.\n\
+                   \Go to the store and buy some more, 99 bottles of beer on the wall.\n"#) -}
+c78a651762b757530ef8aeb35d50b136
+  song4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "%s of beer on the wall, %s of beer.\n\
+                   \Take one down and pass it around, %s of beer on the wall.\n"#) -}
+ad380cfd5906a54de3ea09ac905d86be
+  song5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " bottles"#) -}
+d566ec5730b851261300a649896c077d
+  song6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1 bottle"#) -}
+6258221d8c5cb5c1a2e76bf3ce500831
+  song7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "No more bottles"#) -}
+f1bfa1a46777f83cc30d5db16b796fbd
+  song_c :: GHC.Types.Int -> [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: [[GHC.Types.Char]]) ->
+                 case Beer.$wc w w1 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ [GHC.Types.Char] ww1 ww2 }) -}
+"SPEC/Beer $fPrintfArg[]_$cparseFormat @ Char" [ALWAYS] forall ($dIsChar :: Text.Printf.IsChar
+                                                                              GHC.Types.Char)
+  Text.Printf.$fPrintfArg[]_$cparseFormat @ GHC.Types.Char $dIsChar
+  = Beer.$s$fPrintfArg[]_$s$fPrintfArg[]_$cparseFormat
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,166 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-16 14:34:57.015578 UTC
+
+interface grade-school-0.1.0.2-8XmvH99oQw66n0pHqliuYi:School 8002
+  interface hash: 957afa8bf9503f3454d31d2bf505a16c
+  ABI hash: 005ab1ba201912fac26965ff91ec4a03
+  export-list hash: 3f6db27fa450630e6977c41e219d4f03
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  School.add
+  School.empty
+  School.grade
+  School.sorted
+  School.School
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.10.2@containers-0.5.10.2-BsNvjXoQS1iGZ9xbXaQ0Mz
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.10.2@containers-0.5.10.2-BsNvjXoQS1iGZ9xbXaQ0Mz:Data.Map.Internal
+                         containers-0.5.10.2@containers-0.5.10.2-BsNvjXoQS1iGZ9xbXaQ0Mz:Data.Set.Internal
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.10.2@containers-0.5.10.2-BsNvjXoQS1iGZ9xbXaQ0Mz:Data.Map feef51cca1b9b8adcc3765c58c08cea5
+import  -/  containers-0.5.10.2@containers-0.5.10.2-BsNvjXoQS1iGZ9xbXaQ0Mz:Data.Map.Internal 6a24602b7366225dd4fb310c3d509df8
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+aee69a0af2cc1f60e2a13d3ce7acaecc
+  $slookup1 ::
+    GHC.Types.Int
+    -> Data.Map.Internal.Map GHC.Types.Int a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: GHC.Types.Int)
+                   (w1 :: Data.Map.Internal.Map GHC.Types.Int a) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 School.$wpoly_go13 @ a ww1 w1 }) -}
+6db5b5d0c6726c83a695aaf6a813d6d1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   School.$trModule2
+                   School.$trModule1) -}
+96b94234a0e253e44a33e2dea4bddea6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "School"#) -}
+db9615421c59739131b067a4db66178f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "grade-school-0.1.0.2-8XmvH99oQw66n0pHqliuYi"#) -}
+54c503208fcf195e1041702e61f9998a
+  $w$sgo1 ::
+    (GHC.Types.Int -> a1 -> GHC.Base.Maybe a1)
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+  {- Arity: 3, Strictness: <L,1*C1(C1(U))><L,U><S,1*U>,
+     Inline: [0] -}
+b7ccdc45681a4001340c23dff25bb9a9
+  $w$sgo13 ::
+    GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+9c8405be1f62338a2ad1a94968fad1d4
+  $wadd ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> School.School
+    -> Data.Map.Internal.Map GHC.Types.Int [GHC.Base.String]
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: GHC.Base.String)
+                   (w1 :: School.School) ->
+                 case School.$wpoly_go1 @ [GHC.Base.String] ww w1 of wild {
+                   GHC.Types.False
+                   -> School.$w$sgo13
+                        @ [GHC.Base.String]
+                        (GHC.Types.I# ww)
+                        ww
+                        (GHC.Types.: @ GHC.Base.String w (GHC.Types.[] @ GHC.Base.String))
+                        w1
+                   GHC.Types.True
+                   -> School.$w$sgo1
+                        @ [GHC.Base.String]
+                        (\ (ds :: GHC.Types.Int)[OneShot]
+                           (x :: [GHC.Base.String])[OneShot] ->
+                         GHC.Base.Just
+                           @ [GHC.Base.String]
+                           (Data.OldList.sortBy
+                              @ GHC.Base.String
+                              GHC.Classes.$fOrd[]_$s$ccompare1
+                              (GHC.Types.: @ GHC.Base.String w x)))
+                        ww
+                        w1 }) -}
+ae25489e65e83422454356efe7d7913d
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Int a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+69b3e49c03cb5f709d479b455fbd868c
+  $wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Int a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+25772c08386b06860ff983a5fd34f9e4
+  type School = Data.Map.Internal.Map GHC.Types.Int [GHC.Base.String]
+4838a870e78c3e25d9e5a3c31848bbe5
+  add ::
+    GHC.Types.Int -> GHC.Base.String -> School.School -> School.School
+  {- Arity: 3, Strictness: <S,U(U)><L,U><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Base.String)
+                   (w2 :: School.School) ->
+                 case w of ww { GHC.Types.I# ww1 -> School.$wadd ww1 w1 w2 }) -}
+61df85f9d2b9047c155c8410aaf44908
+  empty :: School.School
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Map.Internal.Tip @ GHC.Types.Int @ [GHC.Base.String]) -}
+56f0dd719d5389ef803da68d5e0a667e
+  grade :: GHC.Types.Int -> School.School -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (gradeNum :: GHC.Types.Int) (school :: School.School) ->
+                 case School.$slookup1 @ [GHC.Base.String] gradeNum school of wild {
+                   GHC.Base.Nothing -> GHC.Types.[] @ GHC.Base.String
+                   GHC.Base.Just v -> v }) -}
+dbcbce61c0b2225fdbbd0a80be500763
+  sorted :: School.School -> [(GHC.Types.Int, [GHC.Base.String])]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Map.Internal.toAscList
+                   @ GHC.Types.Int
+                   @ [GHC.Base.String]) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
