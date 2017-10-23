@@ -1,0 +1,151 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-11 13:57:58.578798 UTC
+
+interface house-0.1.0.2-HQG49pL7fU9KuPvuj9qRzx:House 8002
+  interface hash: e0b1ee074895b104dd103cd4fd2ff2fe
+  ABI hash: cb6e84b5a415a206295bc89240b8172d
+  export-list hash: ef2860016d033e6778f2d0ab58e425d3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  House.rhyme
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+ad077883f0e4224fa38cb1d928e40834
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module House.$trModule2 House.$trModule1) -}
+721224347e32f6e9577a306f9cd31625
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "House"#) -}
+b34bbd25f0a8bdffd3464def6fd20a70
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "house-0.1.0.2-HQG49pL7fU9KuPvuj9qRzx"#) -}
+57b4d602cea486e3c6a302f741ff1bcd
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+5e4690756c83abffba91e2171130150a
+  bodies :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.lines House.rhyme5) -}
+741297fea3ec8450b819a65d4257d0d0
+  heads :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.List.filter
+                   @ [GHC.Types.Char]
+                   House.rhyme9
+                   House.rhyme7) -}
+aa55d78c53ceb57d15c863ce4409f361
+  rhyme :: GHC.Base.String
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ [GHC.Types.Char]
+                        House.heads
+                        0# of ww2 { DEFAULT ->
+                 case GHC.Enum.efdtIntUpFB
+                        @ [[GHC.Types.Char]]
+                        House.rhyme3
+                        (GHC.Types.[] @ [GHC.Types.Char])
+                        0#
+                        1#
+                        (GHC.Prim.-# ww2 1#) of wild {
+                   [] -> House.rhyme2
+                   : x xs1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (Data.OldList.intercalate_$spoly_go
+                           @ GHC.Types.Char
+                           x
+                           (Data.OldList.prependToAll @ [GHC.Types.Char] House.rhyme1 xs1))
+                        House.rhyme2 } }) -}
+a7967ef32ec5913a6dac51e4d3a7b682
+  rhyme1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \\n"#) -}
+3e96f60a9827e3d766676361375bc3f9
+  rhyme10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "This"#) -}
+9f128c6ef55f0cf75a0f740be31dbe71
+  rhyme2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+185d4ad851a69c886f9b22f8c29458f9
+  rhyme3 :: GHC.Types.Int -> [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+  {- Arity: 2,
+     Unfolding: (\ (ds :: GHC.Types.Int)
+                   (ds1 :: [[GHC.Types.Char]])[OneShot] ->
+                 GHC.Types.:
+                   @ [GHC.Types.Char]
+                   (Data.OldList.intercalate_$spoly_go
+                      @ GHC.Types.Char
+                      (GHC.List.!! @ [GHC.Types.Char] House.heads ds)
+                      (case House.rhyme6 of wild { GHC.Types.I# x ->
+                       case ds of wild1 { GHC.Types.I# y ->
+                       let {
+                         x1 :: GHC.Prim.Int# = GHC.Prim.-# x y
+                       } in
+                       case GHC.Prim.tagToEnum#
+                              @ GHC.Types.Bool
+                              (GHC.Prim.<=# x1 0#) of wild2 {
+                         GHC.Types.False
+                         -> Data.OldList.prependToAll
+                              @ [GHC.Types.Char]
+                              House.rhyme2
+                              (House.$wunsafeDrop @ GHC.Base.String x1 House.bodies)
+                         GHC.Types.True -> House.rhyme4 } } }))
+                   ds1) -}
+27f9a82ceb0e73d2ab553c2366f4ddad
+  rhyme4 :: [[GHC.Types.Char]]
+  {- Unfolding: (Data.OldList.prependToAll
+                   @ [GHC.Types.Char]
+                   House.rhyme2
+                   House.bodies) -}
+d89cf09da5f0f5fc56ab72b197fbfa53
+  rhyme5 :: [GHC.Types.Char]
+f460f76585b97f6f21e36bb72a24012c
+  rhyme6 :: GHC.Types.Int
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ [GHC.Types.Char]
+                        House.bodies
+                        0# of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 }) -}
+4ee771a521392fd732257c62e384a445
+  rhyme7 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.lines House.rhyme8) -}
+53fc5be744513131f912bc373a9cff21
+  rhyme8 :: [GHC.Types.Char]
+79bf43976d97c71eecae35b6ed1c0e55
+  rhyme9 :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1,
+     Unfolding: (Data.OldList.isPrefixOf
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   House.rhyme10) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
