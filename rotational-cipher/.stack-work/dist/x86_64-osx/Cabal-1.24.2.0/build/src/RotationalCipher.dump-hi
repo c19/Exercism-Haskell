@@ -1,0 +1,126 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-23 12:05:00.118202 UTC
+
+interface rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT:RotationalCipher 8002
+  interface hash: 2dd0916b29ffb532fc4355d5c4ff2716
+  ABI hash: 0f2594bd33ca23e3bf3342138f95f5a9
+  export-list hash: 589a0ffd423f6ff241847ed78586e68b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RotationalCipher.rotate
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+071197e701a1bb481c53099101aa0c2f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RotationalCipher.$trModule2
+                   RotationalCipher.$trModule1) -}
+bc26f4e2273e0ec5bbf859a83143f9ee
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RotationalCipher"#) -}
+4d4eef834bbc09f4faaf530ff6935b20
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT"#) -}
+1c28c529f719f391f82ef68e7a4b9f12
+  $wrotate' :: GHC.Prim.Int# -> GHC.Prim.Char# -> GHC.Prim.Char#
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Char#) ->
+                 let {
+                   x :: GHC.Prim.Int# = GHC.Prim.ord# ww1
+                 } in
+                 let {
+                   $w$j :: GHC.Prim.Int# -> GHC.Prim.Char#
+                     {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                   = \ (w :: GHC.Prim.Int#)[OneShot] ->
+                     case GHC.Classes.modInt#
+                            (GHC.Prim.-# (GHC.Prim.+# x ww) w)
+                            26# of ww2 { DEFAULT ->
+                     let {
+                       i# :: GHC.Prim.Int# = GHC.Prim.+# ww2 w
+                     } in
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild1 {
+                       GHC.Types.False
+                       -> case GHC.Char.chr2 i# ret_ty GHC.Prim.Char# of {}
+                       GHC.Types.True -> GHC.Prim.chr# i# } }
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x 97#) of wild {
+                   GHC.Types.False -> $w$j 97# GHC.Types.True -> $w$j 65# }) -}
+de75da59097c0c00e11047649462e05b
+  rotate :: GHC.Types.Int -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>,
+     Unfolding: (\ (k :: GHC.Types.Int) (eta :: [GHC.Types.Char]) ->
+                 GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   (\ (c :: GHC.Types.Char) ->
+                    case c of wild { GHC.Types.C# c# ->
+                    let {
+                      y :: GHC.Prim.Int# = GHC.Prim.ord# c#
+                    } in
+                    let {
+                      $w$j :: GHC.Prim.Void# -> GHC.Prim.Char#
+                        {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                      = \ (void :: GHC.Prim.Void#)[OneShot] ->
+                        case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.<=# 97# y) of wild1 {
+                          GHC.Types.False -> c#
+                          GHC.Types.True
+                          -> case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.<=# y 122#) of wild2 {
+                               GHC.Types.False -> c#
+                               GHC.Types.True
+                               -> case k of ww { GHC.Types.I# ww1 ->
+                                  RotationalCipher.$wrotate' ww1 c# } } }
+                    } in
+                    case GHC.Prim.tagToEnum#
+                           @ GHC.Types.Bool
+                           (GHC.Prim.<=# 65# y) of wild1 {
+                      GHC.Types.False
+                      -> case $w$j GHC.Prim.void# of ww { DEFAULT -> GHC.Types.C# ww }
+                      GHC.Types.True
+                      -> case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<=# y 90#) of wild2 {
+                           GHC.Types.False
+                           -> case $w$j GHC.Prim.void# of ww { DEFAULT -> GHC.Types.C# ww }
+                           GHC.Types.True
+                           -> case k of ww { GHC.Types.I# ww1 ->
+                              case RotationalCipher.$wrotate' ww1 c# of ww2 { DEFAULT ->
+                              GHC.Types.C# ww2 } } } } })
+                   eta) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
