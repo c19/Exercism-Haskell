@@ -1,0 +1,125 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-06 13:28:44.500121 UTC
+
+interface isbn-verifier-1.1.0.1-4knpVDKMCdN6yVDRTVYlC3:IsbnVerifier 8002
+  interface hash: 8643af45f8a1b3378de86d8042987668
+  ABI hash: b916fdca6bf5efd64a1f2bee80ce17b6
+  export-list hash: 884126b9393930e9746970eedd781a91
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  IsbnVerifier.isbn
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+d10dcc5015606033e87e10479d54ad6f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   IsbnVerifier.$trModule2
+                   IsbnVerifier.$trModule1) -}
+2a0537ebbf7519ca7c2fa3171c132299
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IsbnVerifier"#) -}
+96f4dc98cf1c6229ab25e835da813017
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "isbn-verifier-1.1.0.1-4knpVDKMCdN6yVDRTVYlC3"#) -}
+406cc8974e996aaaf55730316cb6e32e
+  $wgo ::
+    [GHC.Types.Int]
+    -> [GHC.Types.Int] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,U>,
+     Inline: [0] -}
+a5928cf87762caf0837f1aa7ccd12bf3
+  $wgo1 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+632393cd7e83adc5ac921eca5dabcae3
+  isbn :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 case IsbnVerifier.$wgo1 s 0# of ww {
+                   DEFAULT -> GHC.Types.False
+                   10#
+                   -> case s of wild {
+                        [] -> case GHC.List.init2 ret_ty GHC.Types.Bool of {}
+                        : x xs
+                        -> let {
+                             nums :: [GHC.Types.Int]
+                             = IsbnVerifier.isbn_go1 (GHC.List.init1 @ GHC.Types.Char x xs)
+                           } in
+                           case GHC.List.$wlenAcc @ GHC.Types.Int nums 0# of ww2 {
+                             DEFAULT -> GHC.Types.False
+                             9#
+                             -> case IsbnVerifier.isbn_go
+                                       wild
+                                       (GHC.List.lastError
+                                          @ GHC.Types.Char) of wild1 { GHC.Types.C# ds ->
+                                let {
+                                  $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                                    {- Arity: 1, Strictness: <S,U> -}
+                                  = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                                    case GHC.Prim.tagToEnum#
+                                           @ GHC.Types.Bool
+                                           (GHC.Prim.># x1 -1#) of wild2 {
+                                      GHC.Types.False -> GHC.Types.False
+                                      GHC.Types.True
+                                      -> case IsbnVerifier.$wgo
+                                                IsbnVerifier.isbn1
+                                                nums
+                                                0# of ww1 { DEFAULT ->
+                                         case GHC.Classes.modInt# (GHC.Prim.+# x1 ww1) 11# of ww3 {
+                                           DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }
+                                } in
+                                case ds of ds1 {
+                                  DEFAULT
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.leWord#
+                                               (GHC.Prim.int2Word#
+                                                  (GHC.Prim.-# (GHC.Prim.ord# ds1) 48#))
+                                               9##) of wild2 {
+                                       GHC.Types.False -> $j -1#
+                                       GHC.Types.True
+                                       -> case Data.Char.$wdigitToInt ds1 of ww1 { DEFAULT ->
+                                          $j ww1 } }
+                                  'X'# -> $j 10#
+                                  'x'# -> $j 10# } } } } }) -}
+9ff129a14a343fc10817ab3409310214
+  isbn1 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.efdInt 10# 9#) -}
+20c4de4b29e250e1dd67f20ff408a14c
+  isbn_go :: [GHC.Types.Char] -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U)> -}
+dbc09de1cd5dc9fbc5b4dfa6c030e45b
+  isbn_go1 :: [GHC.Types.Char] -> [GHC.Types.Int]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
