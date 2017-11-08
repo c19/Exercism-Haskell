@@ -1,0 +1,191 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-08 12:41:47.273528 UTC
+
+interface pascals-triangle-1.0.0.3-LxUlahZKN95KOE0MAYBpof:Triangle 8002
+  interface hash: 766066cdb31dc8f5152f0d4bdb9a8d39
+  ABI hash: b89afabaddfdd80cde2099e36e938bcc
+  export-list hash: f9158b5b7390532390708f7d2d6a8e64
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Triangle.rows
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+5b479b454eb5971880d3c480634463f8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Triangle.$trModule2
+                   Triangle.$trModule1) -}
+fb77ae729856152b34698a5512df3059
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Triangle"#) -}
+6ce026e0649693dbf66c19d9c3acd64a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "pascals-triangle-1.0.0.3-LxUlahZKN95KOE0MAYBpof"#) -}
+4808abaed53b84b3a73e8203d53b8c34
+  $wrows :: GHC.Prim.Int# -> [[GHC.Integer.Type.Integer]]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.-# ww 1#
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 0# y) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [[GHC.Integer.Type.Integer]]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ [GHC.Integer.Type.Integer]
+                            (let {
+                               ds :: GHC.Integer.Type.Integer = GHC.Integer.Type.smallInteger x
+                             } in
+                             case GHC.Integer.Type.eqInteger#
+                                    ds
+                                    Triangle.rows3 of wild1 { DEFAULT ->
+                             case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                               GHC.Types.False
+                               -> let {
+                                    lvl :: GHC.Integer.Type.Integer = Triangle.factorial ds
+                                  } in
+                                  letrec {
+                                    go1 :: GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+                                      {- Arity: 1, Strictness: <S,U> -}
+                                    = \ (x1 :: GHC.Integer.Type.Integer) ->
+                                      case GHC.Integer.Type.gtInteger# x1 ds of wild3 { DEFAULT ->
+                                      case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild3 of wild4 {
+                                        GHC.Types.False
+                                        -> GHC.Types.:
+                                             @ GHC.Integer.Type.Integer
+                                             (case GHC.Integer.Type.eqInteger#
+                                                     x1
+                                                     Triangle.rows3 of wild5 { DEFAULT ->
+                                              case GHC.Prim.tagToEnum#
+                                                     @ GHC.Types.Bool
+                                                     wild5 of wild6 {
+                                                GHC.Types.False
+                                                -> let {
+                                                     ds1 :: GHC.Integer.Type.Integer
+                                                     = Triangle.factorial
+                                                         (GHC.Integer.Type.minusInteger ds x1)
+                                                   } in
+                                                   case GHC.Integer.Type.eqInteger#
+                                                          ds1
+                                                          Triangle.rows3 of wild7 { DEFAULT ->
+                                                   case GHC.Prim.tagToEnum#
+                                                          @ GHC.Types.Bool
+                                                          wild7 of wild8 {
+                                                     GHC.Types.False
+                                                     -> let {
+                                                          ds2 :: GHC.Integer.Type.Integer
+                                                          = Triangle.factorial x1
+                                                        } in
+                                                        case GHC.Integer.Type.eqInteger#
+                                                               ds2
+                                                               Triangle.rows3 of wild9 { DEFAULT ->
+                                                        case GHC.Prim.tagToEnum#
+                                                               @ GHC.Types.Bool
+                                                               wild9 of wild10 {
+                                                          GHC.Types.False
+                                                          -> GHC.Integer.Type.divInteger
+                                                               (GHC.Integer.Type.divInteger lvl ds2)
+                                                               ds1
+                                                          GHC.Types.True
+                                                          -> case GHC.Real.divZeroError
+                                                             ret_ty GHC.Integer.Type.Integer
+                                                             of {} } }
+                                                     GHC.Types.True
+                                                     -> GHC.Real.divZeroError
+                                                          @ GHC.Integer.Type.Integer } }
+                                                GHC.Types.True -> Triangle.rows2 } })
+                                             (go1
+                                                (GHC.Integer.Type.plusInteger
+                                                   x1
+                                                   GHC.Enum.$fEnumInteger1))
+                                        GHC.Types.True
+                                        -> GHC.Types.[] @ GHC.Integer.Type.Integer } }
+                                  } in
+                                  go1 Triangle.rows3
+                               GHC.Types.True -> Triangle.rows1 } })
+                            (case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.==# x y) of wild1 {
+                               GHC.Types.False -> go (GHC.Prim.+# x 1#)
+                               GHC.Types.True -> GHC.Types.[] @ [GHC.Integer.Type.Integer] })
+                      } in
+                      go 0#
+                   GHC.Types.True -> GHC.Types.[] @ [GHC.Integer.Type.Integer] }) -}
+80b9ccd43f812c62a45f94a622ffbfff
+  factorial :: GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (ds :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.eqInteger#
+                        ds
+                        Triangle.rows3 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> letrec {
+                        go :: GHC.Integer.Type.Integer
+                              -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                          {- Arity: 2, Strictness: <S,U><S,1*U> -}
+                        = \ (x :: GHC.Integer.Type.Integer)
+                            (eta :: GHC.Integer.Type.Integer) ->
+                          case GHC.Integer.Type.gtInteger# x ds of wild2 { DEFAULT ->
+                          case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                            GHC.Types.False
+                            -> go
+                                 (GHC.Integer.Type.plusInteger x GHC.Enum.$fEnumInteger1)
+                                 (GHC.Integer.Type.timesInteger eta x)
+                            GHC.Types.True -> eta } }
+                      } in
+                      go Triangle.rows2 Triangle.rows2
+                   GHC.Types.True -> Triangle.rows2 } }) -}
+4b4c51e29b785f8d894bf7c365243862
+  rows :: GHC.Types.Int -> [[GHC.Integer.Type.Integer]]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Triangle.$wrows ww1 }) -}
+ce35c8f66992e8a99114d73b031890fd
+  rows1 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Triangle.rows2
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+0f4ebef725af272eb1e6413dc8b64c28
+  rows2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+f2cc607baa09bee3a8df36b236e247fa
+  rows3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
